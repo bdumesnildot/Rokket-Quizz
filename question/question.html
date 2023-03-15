@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="question.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question</title>
+  </head>
+
+  <body>
+    <nav class="navBar">
+      <a href="../index.html"
+        ><img src="../assets/svg/quit_cross.svg" alt="cross button"
+      /></a>
+    </nav>
+
+    <section class="timerprogress">
+      <div class="progress">
+        <img id="progressBarEllipse" src="../assets/svg/progressBar-ellipse-800x800.svg" alt="progress bar ellipse">
+        <img id="progressBarRocket" src="../assets/svg/progressRocket-45x50.svg" alt="progress bar roccket">
+        <p id="progressText">10%</p>
+      </div>
+
+      <div class="timer">
+        <img src="../assets/svg/moon-halo-665x665.svg" alt="moon image" />
+        <p id="timerText">10</p>
+      </div>
+    </section>
+
+    <section class="questionCard">
+      <p class="question">
+        QUESTION : <br />
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est voluptates
+        id, recusandae labore ducimus molestias.
+      </p>
+      <p class="answer" id="answer1">Lorem ipsum, dolor sit amet</p>
+      <p class="answer" id="answer2">Lorem ipsum, dolor sit amet</p>
+      <p class="answer" id="answer3">Lorem ipsum, dolor sit amet</p>
+      <p class="answer" id="answer4">Lorem ipsum, dolor sit amet</p>
+    </section>
+
+    <button class="skipButton">Skip</button>
+
+    <script src="question-timer.js"></script>
+  </body>
+</html>

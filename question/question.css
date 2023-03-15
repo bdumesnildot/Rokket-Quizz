@@ -1,9 +1,184 @@
+/* imports */
+@import url(../variable.css);
+
+/* reset & general styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main container */
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--background-1);
+}
+
+
+
+/* navigation */
+
+nav {
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+
+nav a {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+
+
+/* Timer and prgress bar */
+
+section.timerprogress {
+  position: relative;
+  height: 250px;
+  width: 100%;
+
+  /* border: solid 1px red; */
+}
+
+section.timerprogress .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+
+  color: var(--color3);
+  font-family: var(--font-family-home-h1);
+  font-size: 1em;
+}
+
+section.timerprogress #progressBarEllipse {
+  position: absolute;
+  height: 75%;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+section.timerprogress #progressBarRocket {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  rotate: 90deg;
+}
+
+section.timerprogress p {
+  position: absolute;
+}
+
+
+
+section.timerprogress .timer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  /* border: solid 1px #fff; */
+}
+
+section.timerprogress .timer img {
+  position: absolute;
+  height: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -10px;
+}
+
+section.timerprogress .timer p {
+  position: absolute;
+  top: 49%;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-family-home-h1);
+  font-size: 40px;
+}
+
+
+
+/* questions */
+
+section.questionCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr;
+  gap: 15px;
+
+  margin: 0 20px;
+}
+
+section.questionCard .question {
+  height: 130px;
+  padding: 0 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-color: var(--color2);
+  color: var(--color1-dark);
+  
+  font-family: var(--font-family-play-p);
+  font-size: 1em;
+  line-height: 1.3em;
+  letter-spacing: 0.02em;
+  border-radius: 35px;
+}
+
+section.questionCard .answer {
+  padding: 10px 20px;
+
+text-align: center;
+
+  background-color: var(--color1);
+  color: var(--color3);
+
+  font-family: var(--font-family-home-button);
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  border-radius: 35px;
+}
+
+
+
+/* footer */
+
+button.skipButton {
+  color: var(--color-dark-btn);
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-family-home-h1);
+  font-size: 25px;
+  padding: 5px 0;
+}
 
 
 
 
 /* iPads ----------- */
-@media screen and (min-device-width : 768px) and (max-device-width : 1023px) {}
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+}
 
 /* Desktops ----------- */
-@media screen and (min-width : 1024px) {}
+@media screen and (min-width: 1024px) {
+}
