@@ -1,5 +1,80 @@
+@import url(variable.css);
+
+/* main element */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    
+}
+
+body, .button-go {
+    color: var(--color-title);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-home-page, .text-and-moon{
+    margin-bottom: 1em;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 1em;
+    font-family: var(--font-family-home-h1);
+}
+
+.text-soundbite {
+    width: 48%;
+    color: var( --font-color-p);
+    margin-left: 20px;
+    font-family: var(--font-family-navigate-p);
+    line-height: 33px;
+    font-size: 20px;
+}
+
+/* svg and img */
 
 
+.rocket-home-page {
+    width: 60%;
+    padding-left: 70px;
+}
+
+.svg-moon-home {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 9em;
+    z-index: -1;
+}
+
+/* button */
+.button-go {
+    text-decoration: none;
+    background-color: var(--color-home-btn);
+    font-family: var(--font-family-home-button);
+    font-weight: 900;
+    font-size: 24px;
+    padding: 13px 80px;
+    border-radius: 100px;
+    box-shadow: inset 10px -9px 29px rgba(11, 11, 11, 0.65);
+    border: none;
+    cursor: pointer;
+}
+
+/* link */
+.text-button {
+    font-size: 13px;
+    color: var(--font-color-play);
+    font-family: var(--font-family-play-p);
+    text-decoration: none;
+}
 
 
 
@@ -7,7 +82,49 @@
 
 
 /* iPads ----------- */
-@media screen and (min-device-width : 768px) and (max-device-width : 1023px) {}
+@media screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+    
+    main {
+        margin: auto;
+        width: 80%;
+    }
+    
+    h1 {
+        font-size: 70px;
+        padding-top: .5em;
+    }
+
+    .rocket-home-page{
+        width: 90%;
+        padding-left: 0;
+        margin-bottom: 1em;
+    }
+
+    .text-and-moon {
+        margin-bottom: 6em;
+    }
+
+    .text-soundbite {
+        font-size: 32px;
+        width: 60%;
+        line-height: 50px;
+        margin: 0;
+    }
+
+    .button-go {
+        padding: 20px 160px;
+        font-size: 40px;
+    }
+
+    .button-home-page {
+        margin-bottom: 30px;
+    }
+
+    .text-button {
+        font-size: 24px;
+    }
+
+}
 
 /* Desktops ----------- */
 @media screen and (min-width : 1024px) {}
