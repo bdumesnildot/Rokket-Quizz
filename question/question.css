@@ -47,8 +47,6 @@ section.timerprogress {
   position: relative;
   height: 250px;
   width: 100%;
-
-  /* border: solid 1px red; */
 }
 
 section.timerprogress .progress {
@@ -74,13 +72,19 @@ section.timerprogress #progressBarEllipse {
 
 section.timerprogress #progressBarRocket {
   position: absolute;
-  left: 0%;
-  top: 0%;
-  rotate: 90deg;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translate(-130px, 160px);
+  rotate: 0deg;
 }
 
-section.timerprogress p {
+section.timerprogress p#progressText {
   position: absolute;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-165px, 165px);
 }
 
 
@@ -119,14 +123,14 @@ section.timerprogress .timer p {
 section.questionCard {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5fr;
-  gap: 15px;
+  grid-template-rows: 6fr;
+  gap: 2vh;
 
-  margin: 0 20px;
+  margin: 0 2%;
 }
 
 section.questionCard .question {
-  height: 130px;
+  height: 20vh;
   padding: 0 20px;
   
   display: flex;
@@ -144,9 +148,12 @@ section.questionCard .question {
 }
 
 section.questionCard .answer {
+  height: 6vh;
   padding: 10px 20px;
 
-text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--color1);
   color: var(--color3);
@@ -154,31 +161,62 @@ text-align: center;
   font-family: var(--font-family-home-button);
   font-size: 1em;
   font-weight: 700;
-  line-height: 1em;
   letter-spacing: 0.2em;
   border-radius: 35px;
 }
 
-
-
-/* footer */
-
-button.skipButton {
+section.questionCard a.skipButton {
+  text-align: center;
   color: var(--color-dark-btn);
-  background-color: transparent;
-  border: none;
   font-family: var(--font-family-home-h1);
   font-size: 25px;
   padding: 5px 0;
+  text-decoration: none;
 }
 
 
 
 
-/* iPads ----------- */
+/* responsive ----------- */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  
+}
+
+
 @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+
+
 }
 
-/* Desktops ----------- */
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: landscape) {
+
+
+}
+
+
 @media screen and (min-width: 1024px) {
+
+  section.questionCard {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 4fr;
+    gap: 2vh;
+
+    margin-bottom: 5vh;
+  }
+
+  section.questionCard .question {
+    grid-column: 1 / 3;
+    font-size: 1.3em;
+  }
+  
+  section.questionCard .answer {
+    height: 12vh;
+    font-size: 1.3em;
+  }
+  
+  section.questionCard a.skipButton {
+    grid-column: 1 / 3;
+  }
+
 }
