@@ -1,10 +1,121 @@
+@import url(../variable.css);
 
+/*-- body background -- */
 
+body {
+    background-color: var(--background-color);
+    background-image: url("..//assets/svg/points.svg");
+    background-repeat: no-repeat;
+    background-position: -275px 130px;
+    background-size: 150%;
+    height: 100vh;
+}
 
+/*-- section -- */
 
+section {
+    background-color: var(--color-home-btn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 40px;
+    height: 95px;
+    font-size: 24px;
+    color: var(--color-title);
+
+}
+
+/*-- div button -- */
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 89px;
+    height: 60%;
+}
+
+div button {
+
+    background-color: var(--color-light-btn);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
+    color: var(--color-light-btn-choose);
+    font-size: 20px;
+    border: none;
+}
 
 /* iPads ----------- */
-@media screen and (min-device-width : 768px) and (max-device-width : 1023px) {}
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    /*-- body background -- */
+
+    body {
+        background-color: var(--background-color);
+        background-image: url("..//assets/svg/points.svg");
+        background-repeat: no-repeat;
+        background-position: -368px 116px;
+        background-size: 110%;
+    }
+
+    /*-- section -- */
+
+    section {
+        background-color: var(--color-home-btn);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin: 30px 140px;
+        height: 120px;
+        font-size: 35px;
+        color: var(--color-title);
+
+    }
+
+    /*-- div button -- */
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 89px;
+    }
+
+    div button {
+        background-color: var(--color-light-btn);
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 70px;
+        box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
+        color: var(--color-light-btn-choose);
+        font-size: 35px;
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Desktops ----------- */
 @media screen and (min-width : 1024px) {}
