@@ -18,7 +18,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100vh;
 }
 
@@ -28,7 +28,6 @@ main {
 
 h1 {
     text-align: center;
-    padding-top: 1em;
     font-family: var(--font-family-home-h1);
 }
 
@@ -60,7 +59,7 @@ h1 {
     position: absolute;
     right: 0;
     bottom: 9em;
-    z-index: -1;
+    z-index: 0;
 }
 
 /* button */
@@ -79,9 +78,16 @@ h1 {
 }
 
 .button-go:hover {
-    background-image: linear-gradient(to right, var(--color-hover-dark-home-btn), var(--color-hover-light-home-btn));
-    animation:slidebg 5s linear infinite;
+    background-image: linear-gradient(to right, var(--color-hover-light-home-btn), #ebf8e1, 10%,var(--color-hover-dark-home-btn));
+    animation:slide 1s linear infinite;
 }
+
+@keyframes slide {
+    to {
+      background-position:30vw;
+    }
+}
+  
 
 /* link */
 .text-button {
@@ -89,6 +95,88 @@ h1 {
     color: var(--font-color-play);
     font-family: var(--font-family-play-p);
     text-decoration: none;
+}
+
+/* stars */
+/* stars phone */
+.star-top-left, .star-top-right, .star-middle-left, .star-middle-right, .star-bottom-left, .star-bottom-right, .star-top-middle, .star-middle-top-left {
+    width: 1em;
+    position: absolute;
+    z-index: -1;
+}
+
+.star-top-left {
+    top: 2em;
+    left: 4em;
+    width: 2em;
+}
+
+.star-top-right {
+    top: 4em;
+    right: 2em;
+    width: 2em;
+}
+
+.star-middle-left {
+    bottom: 20em;
+    left: 0;
+    width: 2em;
+}
+
+.star-middle-right {
+    bottom: 24em;
+    right: 3em;
+}
+
+.star-bottom-left {
+    bottom: 2em;
+    left: 5em;
+}
+
+.star-bottom-right {
+    bottom: 3em;
+    right: 3em;
+}
+
+.star-top-middle {
+    top: 1em;
+    right: 8em;
+}
+
+.star-middle-top-left {
+    top: 10em;
+    left: 5em;
+}
+
+/* stars tablette et desktop */
+.stars-desktop{
+    display: none;
+}
+
+.star-tablette-middle-left, .star-tablette-middle-right, .star-tablette-middle-top, .star-tablette-middle-bottom {
+    position: absolute;
+    z-index: -1;
+    width: 2em;
+}
+
+.star-tablette-middle-left {
+    left: 16em;
+    top: 10em;
+}
+
+.star-tablette-middle-right {
+    right: 19em;
+    top: 9em;
+}
+
+.star-tablette-middle-top {
+    right: 10em;
+    bottom: 8em;
+}
+
+.star-tablette-middle-bottom {
+    right: 22em;
+    bottom: 17em;
 }
 
 
@@ -131,6 +219,22 @@ h1 {
         font-size: 24px;
     }
 
+    /* stars tablettes */
+
+    .stars-desktop {
+        display: block;
+    }
+
+    .star-tablette-middle-left {
+        left: 13em;
+        top: 14em;
+    }
+
+    .star-tablette-middle-right {
+        right: 8em;
+        top: 19em;
+    }
+   
 }
 
 /* Desktops ----------- */
@@ -167,6 +271,12 @@ h1 {
 
     .text-button {
         font-size: 24px;
+    }
+
+    /* stars Desktop */
+
+    .stars-desktop {
+        display: block;
     }
 
 }
