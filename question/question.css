@@ -12,7 +12,6 @@
 /* main container */
 
 body {
-  
   background-color: var(--background-1);
 }
 
@@ -22,12 +21,10 @@ body div.flexContainerMain {
   width: 100vw;
 
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
 }
-
-
 
 /* navigation */
 
@@ -43,11 +40,10 @@ body nav a {
   right: 15px;
 }
 
-
-
 /* Timer and prgress bar */
 
 body div.flexContainerMain section.timerprogress {
+  width: 100vw;
   position: relative;
   height: 250px;
   width: 100%;
@@ -91,8 +87,6 @@ body div.flexContainerMain section.timerprogress p#progressText {
   transform: translate(-165px, 165px);
 }
 
-
-
 body div.flexContainerMain section.timerprogress .timer {
   position: absolute;
   height: 100%;
@@ -111,6 +105,20 @@ body div.flexContainerMain section.timerprogress .timer img {
   bottom: -10px;
 }
 
+body div.flexContainerMain section.timerprogress .timer svg {
+  position: absolute;
+  height: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -10px;
+}
+
+body div.flexContainerMain section.timerprogress .timer svg #shadowDisc {
+  fill: #424242;
+  opacity: 0.8;
+}
+
 body div.flexContainerMain section.timerprogress .timer p {
   position: absolute;
   top: 49%;
@@ -120,11 +128,10 @@ body div.flexContainerMain section.timerprogress .timer p {
   font-size: 40px;
 }
 
-
-
 /* questions */
 
 body div.flexContainerMain section.questionCard {
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 6fr;
@@ -136,14 +143,14 @@ body div.flexContainerMain section.questionCard {
 body div.flexContainerMain section.questionCard .question {
   height: 20vh;
   padding: 0 20px;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   background-color: var(--color2);
   color: var(--color1-dark);
-  
+
   font-family: var(--font-family-play-p);
   font-size: 1em;
   line-height: 1.3em;
@@ -174,18 +181,20 @@ body div.flexContainerMain section.questionCard a.skipButton {
   color: var(--color-dark-btn);
   font-family: var(--font-family-home-h1);
   font-size: 1.5em;
-  padding: 0 0 5px 0;
+  padding: 0 0 1vh 0;
   text-decoration: none;
 }
 
-
-
-
 /* responsive ----------- */
+
 @media screen and (min-width: 360px) and (max-width: 767px) and (orientation: landscape) {
-  
-  body div.flexContainerMain  {
-    flex-direction: row;
+  body div.flexContainerMain {
+    justify-content: flex-end;
+  }
+
+  body div.flexContainerMain section.timerprogress {
+    width: 40vw;
+    margin: auto;
   }
 
   body div.flexContainerMain section.timerprogress p#progressText {
@@ -193,14 +202,13 @@ body div.flexContainerMain section.questionCard a.skipButton {
   }
 
   body div.flexContainerMain section.questionCard {
-    width: 110vw;
-    align-self: flex-end;
+    width: 50vw;
   }
 
   body div.flexContainerMain section.questionCard .question {
     height: 30vh;
   }
-  
+
   body div.flexContainerMain section.questionCard .answer {
     height: 10vh;
   }
@@ -208,30 +216,29 @@ body div.flexContainerMain section.questionCard a.skipButton {
   body div.flexContainerMain section.questionCard a.skipButton {
     font-size: 1.3em;
   }
-
 }
 
-
 @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
-
-
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: landscape) {
+  body div.flexContainerMain {
+    justify-content: flex-end;
+  }
 
-  body div.flexContainerMain  {
-    flex-direction: row;
+  body div.flexContainerMain section.timerprogress {
+    width: 40vw;
+    margin: auto;
   }
 
   body div.flexContainerMain section.questionCard {
-    width: 110vw;
-    align-self: flex-end;
+    width: 50vw;
   }
 
   body div.flexContainerMain section.questionCard .question {
     height: 30vh;
   }
-  
+
   body div.flexContainerMain section.questionCard .answer {
     height: 10vh;
   }
@@ -239,15 +246,12 @@ body div.flexContainerMain section.questionCard a.skipButton {
   body div.flexContainerMain section.questionCard a.skipButton {
     font-size: 1.3em;
   }
-
 }
 
-
 @media screen and (min-width: 1024px) {
-
   body div.flexContainerMain section.questionCard {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 4fr;
     gap: 2vh;
 
@@ -258,14 +262,13 @@ body div.flexContainerMain section.questionCard a.skipButton {
     grid-column: 1 / 3;
     font-size: 1.3em;
   }
-  
+
   body div.flexContainerMain section.questionCard .answer {
     height: 12vh;
     font-size: 1.3em;
   }
-  
+
   body div.flexContainerMain section.questionCard a.skipButton {
     grid-column: 1 / 3;
   }
-
 }
