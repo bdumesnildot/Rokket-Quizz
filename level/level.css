@@ -1,167 +1,168 @@
 @import url(../variable.css);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*-- body background -- */
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  background-image: url("..//assets/svg/points.svg");
+  background-repeat: no-repeat;
+  background-position: -73vw 15vh;
+  background-size: 150%;
+  height: 100vh;
+}
+
+body header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 2em 0 2em;
+}
+
+/*-- section -- */
+
+section h1 {
+  background-color: var(--color-home-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  margin: 10px 40px;
+  height: 95px;
+  font-family: var(--font-family-navigate-p);
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  color: var(--color-title);
+  box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
+}
+
+/*-- div button -- */
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+div button {
+  background-color: var(--color-light-btn);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
+  color: var(--color-light-btn-choose);
+  font-family: var(--font-family-navigate-p);
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* iPads ----------- */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /*-- body background -- */
+
+  body {
+    background-color: var(--background-color);
+    background-image: url("..//assets/svg/points.svg");
+    background-repeat: no-repeat;
+    background-position: -39vw 15vh;
+    background-size: 110%;
+  }
+
+  /*-- section -- */
+
+  section h1 {
+    background-color: var(--color-home-btn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 140px;
+    height: 120px;
+    font-size: 35px;
+    color: var(--color-title);
+  }
+
+  /*-- div button -- */
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  div button {
+    background-color: var(--color-light-btn);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
+    color: var(--color-light-btn-choose);
+    font-size: 35px;
+    border: none;
+  }
+}
+
+/* Desktops ----------- */
+@media screen and (min-width: 1024px) {
+  /*-- body background -- */
+
+  body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: var(--background-color);
     background-image: url("..//assets/svg/points.svg");
     background-repeat: no-repeat;
-    background-position: -73vw 15vh;
-    background-size: 150%;
+    background-position: -15vw -4vh;
+    background-size: 76%;
     height: 100vh;
-}
+  }
 
-/*-- section -- */
+  section h1 {
+    margin: 10px 300px;
+    height: 130px;
+    font-size: 35px;
+  }
 
-section h1 {
-    background-color: var(--color-home-btn);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin: 10px 40px;
-    height: 95px;
-    font-size: 24px;
-    color: var(--color-title);
+  /*-- div button -- */
 
-}
-
-/*-- div button -- */
-
-div {
+  div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 80vh;
-}
+  }
 
-div button {
-
+  div button {
     background-color: var(--color-light-btn);
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 160px;
-    height: 50px;
+    width: 250px;
+    height: 60px;
     box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
     color: var(--color-light-btn-choose);
-    font-size: 20px;
+    font-size: 25px;
     border: none;
-    cursor: pointer;
-}
-
-/* iPads ----------- */
-@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
-    /*-- body background -- */
-
-    body {
-        background-color: var(--background-color);
-        background-image: url("..//assets/svg/points.svg");
-        background-repeat: no-repeat;
-        background-position: -39vw 15vh;
-        background-size: 110%;
-    }
-
-    /*-- section -- */
-
-    section h1 {
-        background-color: var(--color-home-btn);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        margin: 30px 140px;
-        height: 120px;
-        font-size: 35px;
-        color: var(--color-title);
-
-    }
-
-    /*-- div button -- */
-
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    div button {
-        background-color: var(--color-light-btn);
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        height: 70px;
-        box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
-        color: var(--color-light-btn-choose);
-        font-size: 35px;
-        border: none;
-    }
-}
-
-/* Desktops ----------- */
-@media screen and (min-width : 1024px) {
-    /*-- body background -- */
-
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: var(--background-color);
-        background-image: url("..//assets/svg/points.svg");
-        background-repeat: no-repeat;
-        background-position: -15vw -4vh;
-        background-size: 76%;
-        height: 100vh;
-    }
-
-    section h1 {
-        background-color: var(--color-home-btn);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        margin: 10px 300px;
-        height: 130px;
-        font-size: 35px;
-        color: var(--color-title);
-
-    }
-
-    /*-- div button -- */
-
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    div button {
-        background-color: var(--color-light-btn);
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: 60px;
-        box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
-        color: var(--color-light-btn-choose);
-        font-size: 25px;
-        border: none;
-    }
+  }
 }

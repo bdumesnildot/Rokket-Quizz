@@ -6,7 +6,7 @@ let shadowDisc = document.querySelector("#shadowDisc");
 
 let alpha = 0;
 let pi = Math.PI;
-let t = 26;
+let t = 83;
 let fullDisc = `<svg width="170" height="170" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="85" cy="85" r="85" fill="#424242" fill-opacity="0.8"/>
 </svg>`;
@@ -36,7 +36,7 @@ let shadow = setInterval(() => {
 }, t);
 
 // Countdown
-let countdown = 10;
+let countdown = 30;
 
 function myTimer() {
   if (countdown > 0) {

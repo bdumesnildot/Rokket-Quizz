@@ -68,6 +68,7 @@ h1 {
     background-color: var(--color-home-btn);
     font-family: var(--font-family-home-button);
     font-weight: 900;
+    letter-spacing: 0.1em;
     font-size: 24px;
     padding: 13px 80px;
     border-radius: 100px;
