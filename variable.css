@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet');
 
 :root {
+
+  /* color figma*/
+  --color1: #9747ff;
+  --color1-light: #b073ff;
+  --color1-dark: #7d13ff;
+  --color2: #ffb800;
+  --color2-light: #ffde12;
+  --color2-dark: #ff8f00;
+  --color3: #e6e6e6;
+  --background-1: #2a2946;
+  
   /* color */
   --color-title: #9747ff;
   --background-color: #2a2946;
