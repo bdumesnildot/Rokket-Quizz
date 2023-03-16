@@ -12,28 +12,32 @@
 /* main container */
 
 body {
+  
+  background-color: var(--background-1);
+}
+
+body div.flexContainerMain {
   position: relative;
   height: 100vh;
   width: 100vw;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-
-  background-color: var(--background-1);
 }
 
 
 
 /* navigation */
 
-nav {
+body nav {
   position: relative;
   height: 0;
   width: 100%;
 }
 
-nav a {
+body nav a {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -43,13 +47,13 @@ nav a {
 
 /* Timer and prgress bar */
 
-section.timerprogress {
+body div.flexContainerMain section.timerprogress {
   position: relative;
   height: 250px;
   width: 100%;
 }
 
-section.timerprogress .progress {
+body div.flexContainerMain section.timerprogress .progress {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -61,7 +65,7 @@ section.timerprogress .progress {
   font-size: 1em;
 }
 
-section.timerprogress #progressBarEllipse {
+body div.flexContainerMain section.timerprogress #progressBarEllipse {
   position: absolute;
   height: 75%;
   top: 10px;
@@ -70,7 +74,7 @@ section.timerprogress #progressBarEllipse {
   margin: auto;
 }
 
-section.timerprogress #progressBarRocket {
+body div.flexContainerMain section.timerprogress #progressBarRocket {
   position: absolute;
   left: 0;
   right: 0;
@@ -79,7 +83,7 @@ section.timerprogress #progressBarRocket {
   rotate: 0deg;
 }
 
-section.timerprogress p#progressText {
+body div.flexContainerMain section.timerprogress p#progressText {
   position: absolute;
   top: 0%;
   width: 100%;
@@ -89,7 +93,7 @@ section.timerprogress p#progressText {
 
 
 
-section.timerprogress .timer {
+body div.flexContainerMain section.timerprogress .timer {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -98,7 +102,7 @@ section.timerprogress .timer {
   /* border: solid 1px #fff; */
 }
 
-section.timerprogress .timer img {
+body div.flexContainerMain section.timerprogress .timer img {
   position: absolute;
   height: 90%;
   left: 0;
@@ -107,7 +111,7 @@ section.timerprogress .timer img {
   bottom: -10px;
 }
 
-section.timerprogress .timer p {
+body div.flexContainerMain section.timerprogress .timer p {
   position: absolute;
   top: 49%;
   width: 100%;
@@ -120,7 +124,7 @@ section.timerprogress .timer p {
 
 /* questions */
 
-section.questionCard {
+body div.flexContainerMain section.questionCard {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 6fr;
@@ -129,7 +133,7 @@ section.questionCard {
   margin: 0 2%;
 }
 
-section.questionCard .question {
+body div.flexContainerMain section.questionCard .question {
   height: 20vh;
   padding: 0 20px;
   
@@ -147,7 +151,7 @@ section.questionCard .question {
   border-radius: 35px;
 }
 
-section.questionCard .answer {
+body div.flexContainerMain section.questionCard .answer {
   height: 6vh;
   padding: 10px 20px;
 
@@ -165,12 +169,12 @@ section.questionCard .answer {
   border-radius: 35px;
 }
 
-section.questionCard a.skipButton {
+body div.flexContainerMain section.questionCard a.skipButton {
   text-align: center;
   color: var(--color-dark-btn);
   font-family: var(--font-family-home-h1);
-  font-size: 25px;
-  padding: 5px 0;
+  font-size: 1.5em;
+  padding: 0 0 5px 0;
   text-decoration: none;
 }
 
@@ -178,8 +182,33 @@ section.questionCard a.skipButton {
 
 
 /* responsive ----------- */
-@media screen and (max-width: 767px) and (orientation: landscape) {
+@media screen and (min-width: 360px) and (max-width: 767px) and (orientation: landscape) {
   
+  body div.flexContainerMain  {
+    flex-direction: row;
+  }
+
+  body div.flexContainerMain section.timerprogress p#progressText {
+    display: none;
+  }
+
+  body div.flexContainerMain section.questionCard {
+    width: 110vw;
+    align-self: flex-end;
+  }
+
+  body div.flexContainerMain section.questionCard .question {
+    height: 30vh;
+  }
+  
+  body div.flexContainerMain section.questionCard .answer {
+    height: 10vh;
+  }
+
+  body div.flexContainerMain section.questionCard a.skipButton {
+    font-size: 1.3em;
+  }
+
 }
 
 
@@ -190,13 +219,33 @@ section.questionCard a.skipButton {
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: landscape) {
 
+  body div.flexContainerMain  {
+    flex-direction: row;
+  }
+
+  body div.flexContainerMain section.questionCard {
+    width: 110vw;
+    align-self: flex-end;
+  }
+
+  body div.flexContainerMain section.questionCard .question {
+    height: 30vh;
+  }
+  
+  body div.flexContainerMain section.questionCard .answer {
+    height: 10vh;
+  }
+
+  body div.flexContainerMain section.questionCard a.skipButton {
+    font-size: 1.3em;
+  }
 
 }
 
 
 @media screen and (min-width: 1024px) {
 
-  section.questionCard {
+  body div.flexContainerMain section.questionCard {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 4fr;
@@ -205,17 +254,17 @@ section.questionCard a.skipButton {
     margin-bottom: 5vh;
   }
 
-  section.questionCard .question {
+  body div.flexContainerMain section.questionCard .question {
     grid-column: 1 / 3;
     font-size: 1.3em;
   }
   
-  section.questionCard .answer {
+  body div.flexContainerMain section.questionCard .answer {
     height: 12vh;
     font-size: 1.3em;
   }
   
-  section.questionCard a.skipButton {
+  body div.flexContainerMain section.questionCard a.skipButton {
     grid-column: 1 / 3;
   }
 
