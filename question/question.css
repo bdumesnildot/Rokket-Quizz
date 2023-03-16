@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: solid 1px red; */
 }
 
 /* main container */
@@ -18,7 +19,7 @@ body {
 body div.flexContainerMain {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  
 
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +44,7 @@ body nav a {
 /* Timer and prgress bar */
 
 body div.flexContainerMain section.timerprogress {
-  width: 100vw;
+  width: 100%;
   position: relative;
   height: 250px;
   width: 100%;
