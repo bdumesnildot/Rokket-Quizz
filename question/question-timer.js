@@ -1,6 +1,5 @@
 // Timer for the timer in the moon
 
-
 //Shadowdisc animation
 let shadowDiscContainer = document.querySelector("#shadowDiscContainer");
 let shadowDisc = document.querySelector("#shadowDisc");
@@ -10,7 +9,7 @@ let pi = Math.PI;
 let t = 26;
 let fullDisc = `<svg width="170" height="170" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="85" cy="85" r="85" fill="#424242" fill-opacity="0.8"/>
-</svg>`
+</svg>`;
 
 function draw() {
   if (alpha < 359) {
@@ -35,7 +34,6 @@ function draw() {
 let shadow = setInterval(() => {
   draw();
 }, t);
-
 
 // Countdown
 let countdown = 10;

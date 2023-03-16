@@ -1,8 +1,4 @@
-
-
-
 //Progression bar
-
 
 // Timer in the moon
 
@@ -23,4 +19,3 @@ function myTimer() {
 let timer = setInterval(() => {
   myTimer(countdown);
 }, 1000);
-
