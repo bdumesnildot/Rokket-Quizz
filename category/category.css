@@ -59,7 +59,7 @@ div button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 160px;
+  width: 200px;
   height: 50px;
   box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
   color: var(--color-light-btn-choose);
@@ -112,7 +112,7 @@ div button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 250px;
     height: 70px;
     box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
     color: var(--color-light-btn-choose);
