@@ -85,7 +85,7 @@ h1 {
 
 @keyframes slide {
     to {
-      background-position:30vw;
+      background-position: 200px;
     }
 }
   
@@ -216,6 +216,12 @@ h1 {
         font-size: 40px;
     }
 
+    @keyframes slide {
+        to {
+          background-position: 390px;
+        }
+    }
+
     .text-button {
         font-size: 24px;
     }
@@ -268,6 +274,12 @@ h1 {
     .button-go {
         padding: 20px 160px;
         font-size: 40px;
+    }
+
+    @keyframes slide {
+        to {
+          background-position: 400px;
+        }
     }
 
     .text-button {
