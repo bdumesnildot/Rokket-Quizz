@@ -100,31 +100,90 @@ h1 {
 
 /* stars */
 /* stars phone */
-.star-top-left, .star-top-right, .star-middle-left, .star-middle-right, .star-bottom-left, .star-bottom-right, .star-top-middle, .star-middle-top-left {
-    width: 1em;
+.stars-phone {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
     position: absolute;
+    top: -10px;
     z-index: -1;
 }
 
+.star-top-left, .star-top-right, .star-middle-left, .star-middle-right, .star-bottom-left, .star-bottom-right, .star-top-middle, .star-middle-top-left {
+    width: 1em;
+    /* position: absolute;
+    top: 10px;
+    z-index: -1; */
+    animation:shooting 3s linear infinite; 
+}
+
+@keyframes shooting {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(80vh);
+        opacity: 0;
+    }
+}
+
+.stars-phone img:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.stars-phone img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.stars-phone img:nth-child(3) {
+    animation-delay: 2.5s;
+}
+
+.stars-phone img:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.stars-phone img:nth-child(5) {
+    animation-delay: 3.5s;
+}
+
+.stars-phone img:nth-child(6) {
+    animation-delay: 2s;
+}
+
+.stars-phone img:nth-child(7) {
+    animation-delay: 1s;
+}
+
 .star-top-left {
-    top: 2em;
-    left: 4em;
+    /* top: 2em;
+    left: 4em; */
     width: 2em;
 }
 
-.star-top-right {
+/* .star-top-right {
     top: 4em;
     right: 2em;
-    width: 2em;
-}
+} */
 
 .star-middle-left {
-    bottom: 20em;
-    left: 0;
+    /* bottom: 20em;
+    left: 0; */
     width: 2em;
+    
 }
 
-.star-middle-right {
+/* .star-middle-right {
     bottom: 24em;
     right: 3em;
 }
@@ -137,28 +196,31 @@ h1 {
 .star-bottom-right {
     bottom: 3em;
     right: 3em;
-}
+} */
 
 .star-top-middle {
-    top: 1em;
-    right: 8em;
+    /* top: 1em;
+    right: 8em; */
+    width: 2em;
 }
 
-.star-middle-top-left {
+/* .star-middle-top-left {
     top: 10em;
     left: 5em;
-}
+}  */
 
 /* stars tablette et desktop */
 .stars-desktop{
     display: none;
-}
+} 
 
 .star-tablette-middle-left, .star-tablette-middle-right, .star-tablette-middle-top, .star-tablette-middle-bottom {
     position: absolute;
     z-index: -1;
     width: 2em;
+    animation:shooting 5s linear infinite;
 }
+
 
 .star-tablette-middle-left {
     left: 16em;
@@ -179,6 +241,8 @@ h1 {
     right: 22em;
     bottom: 17em;
 }
+
+
 
 
 /* iPads ----------- */
