@@ -1,6 +1,26 @@
 /* imports */
 @import url(../variable.css);
 
+
+/*DOM manipulation*/
+.noClick {
+  pointer-events: none;
+}
+
+.answerColorTrue {
+  background-color: var(--color5) !important;
+}
+
+.answerColorFalse {
+  background-color: var(--color6) !important;
+}
+
+.transparent {
+  color: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
 /* reset & general styling */
 
 * {
@@ -74,11 +94,13 @@ body div.flexContainerMain div.timerprogress #progressBarEllipse {
 
 body div.flexContainerMain div.timerprogress #progressBarRocketDisc {
   position: absolute;
+  height: 143%;
   left: 0;
   right: 0;
   margin: auto;
-  top: 10px;
-  transform: scale(1.06) rotate(-20deg); /*from -20deg to 200deg*/
+  top: -28px;
+  transition: transform 800ms ease-out 300ms;
+  transform: rotate(var(--angle)); 
 }
 
 body div.flexContainerMain div.timerprogress p#progressText {
@@ -173,7 +195,6 @@ body div.flexContainerMain div.questionCard .answer {
   justify-content: center;
   align-items: center;
 
-  background-color: var(--color1);
   color: var(--color3);
   box-shadow: inset 10px -9px 15px rgba(0, 0, 0, 0.51);
 
@@ -183,23 +204,40 @@ body div.flexContainerMain div.questionCard .answer {
   letter-spacing: 0.2em;
   border-radius: 35px;
   text-align: center;
-  
+
   transition: scale 300ms ease-in-out;
+}
+
+body div.flexContainerMain div.questionCard #answer1 {
+  background-color: var(--color1);
+}
+
+body div.flexContainerMain div.questionCard #answer2 {
+  background-color: var(--color1);
+}
+
+body div.flexContainerMain div.questionCard #answer3 {
+  background-color: var(--color1);
+}
+
+body div.flexContainerMain div.questionCard #answer4 {
+  background-color: var(--color1);
 }
 
 body div.flexContainerMain div.questionCard .answer:hover {
   scale: 0.98;
 }
 
-body div.flexContainerMain div.questionCard a.skipButton {
+body div.flexContainerMain div.questionCard a.skipNextButton {
   width: 10%;
-  justify-self : center;
+  justify-self: center;
   text-align: center;
   color: var(--color-dark-btn);
   font-family: var(--font-family-home-h1);
   font-size: 1.5em;
   padding: 0 0 1vh 0;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* responsive ----------- */
@@ -234,7 +272,7 @@ body div.flexContainerMain div.questionCard a.skipButton {
     height: 10vh;
   }
 
-  body div.flexContainerMain div.questionCard a.skipButton {
+  body div.flexContainerMain div.questionCard a.skipNextButton {
     font-size: 1.3em;
   }
 }
@@ -272,7 +310,7 @@ body div.flexContainerMain div.questionCard a.skipButton {
     height: 10vh;
   }
 
-  body div.flexContainerMain div.questionCard a.skipButton {
+  body div.flexContainerMain div.questionCard a.skipNextButton {
     font-size: 1.3em;
   }
 }
@@ -302,7 +340,7 @@ body div.flexContainerMain div.questionCard a.skipButton {
     cursor: pointer;
   }
 
-  body div.flexContainerMain div.questionCard a.skipButton {
+  body div.flexContainerMain div.questionCard a.skipNextButton {
     grid-column: 1 / 3;
   }
 }

@@ -1,31 +1,138 @@
-/*Question card generator*/
 
-// get the data from questionDatabase.json
+
+/*get the data from questionDatabase.json -------------------------------------------------------------*/
 const reponse = await fetch("questionsDatabase.json");
 const questionList = await reponse.json();
 
-//targetting html tags
+/*global variables declaration -------------------------------------------------------------*/
+const progressText = document.querySelector("#progressText")
+const questionCard = document.querySelector(".questionCard");
 const question = document.querySelector(".question");
+const answerButton = document.querySelectorAll(".answer");
 const answer1 = document.querySelector("#answer1");
 const answer2 = document.querySelector("#answer2");
 const answer3 = document.querySelector("#answer3");
 const answer4 = document.querySelector("#answer4");
+const skipNext = document.querySelector(".skipNextButton");
+const skip = document.querySelector(".skip");
+const next = document.querySelector(".next");
+let questionListToDisplay = questionList;
+let gameProgression = 1;
+let score = 0;
+let questionObj = {}; 
 
-function questionCardGenerator(list, i) {
-  const questionText = list[i].question;
-  const answer1Array = list[i].answer1;
-  const answer2Array = list[i].answer2;
-  const answer3Array = list[i].answer3;
-  const answer4Array = list[i].answer4;
 
-  console.log(
-    questionText,
-    answer1Array,
-    answer2Array,
-    answer3Array,
-    answer4Array,
-    list[i].level
-  );
+
+/*Applying filters on questionListToDisplay */ 
+//WIT
+
+/*INITIATE - Generate a random index question and send it to DOM -------------------------------------------------------------*/
+let questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
+questionCardGenerator(questionListToDisplay, questionIndex);
+feedBack();
+
+/*Handeling player ansers -------------------------------------------------------------*/
+
+//clicking an answer
+answerButton.forEach((answer) => {
+  answer.addEventListener("click", () => {
+    let answerClicked = document.querySelector(`#${answer.id}`);
+    gameProgression++;
+
+    //if user choose the right answer
+    if (questionListToDisplay[questionIndex][answer.id][1] === 1) {
+      setAnswerColorTrue(answerClicked);
+      score++;
+      incrementRotation(1);
+      
+    //if user select the wrong answer
+    } else {
+      setAnswerColorFalse(answerClicked);
+      switch (true) {
+        case questionListToDisplay[questionIndex].answer1[1] === 1:
+          setAnswerColorTrue(answer1);
+          break;
+        case questionListToDisplay[questionIndex].answer2[1] === 1:
+          setAnswerColorTrue(answer2);
+          break;
+        case questionListToDisplay[questionIndex].answer3[1] === 1:
+          setAnswerColorTrue(answer3);
+          break;
+        case questionListToDisplay[questionIndex].answer4[1] === 1:
+          setAnswerColorTrue(answer4);
+          break;
+        default:
+          console.error("answer color switch setter doesn't work");
+          break;
+      }
+    }
+
+    //Disable click on anwsers
+    disableAnswerClick();
+
+    //Display a next button
+    displayNextButton();
+
+  });
+});
+
+
+//clicking skip
+skip.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (gameProgression < 10) {
+    questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
+    questionCardGenerator(questionListToDisplay, questionIndex);
+    gameProgression++;
+    feedBack();
+  }
+})
+
+
+//clicking next
+next.addEventListener("click", (event) => {
+  event.preventDefault();
+  
+  gameProgression++;
+  progressText.innerHTML = `${gameProgression}/10`;
+
+  questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
+  questionCardGenerator(questionListToDisplay, questionIndex);
+
+  feedBack();
+})
+
+//clicking score
+score.addEventListener("click", (event) => {
+  //WIP
+})
+
+
+
+/*Functions declaration -------------------------------------------------------------*/
+
+function feedBack() { //log feed back in the console --dev usage
+  console.log("THIS IS A NEW FEED BACK")
+  console.log("Progression on 10 : ", gameProgression);
+  console.log("score : ", score);
+  console.log("question Obj : ", questionObj);
+}
+
+function questionCardGenerator(list, i) { //Send HTML question to DOM
+  resetAnswerColor(answer1);
+  resetAnswerColor(answer2);
+  resetAnswerColor(answer3);
+  resetAnswerColor(answer4);
+  enableAnswerClick()
+  displaySkipButton()
+  
+  questionObj = list.splice(i,1)[0];
+  console.log(questionObj);
+  const questionText = questionObj.question;
+  const answer1Array = questionObj.answer1;
+  const answer2Array = questionObj.answer2;
+  const answer3Array = questionObj.answer3;
+  const answer4Array = questionObj.answer4;
 
   //send values to DOM
   question.innerHTML = questionText;
@@ -35,6 +142,58 @@ function questionCardGenerator(list, i) {
   answer4.innerHTML = answer4Array[0];
 }
 
-let r = Math.floor(Math.random() * questionList.length);
-console.log(questionList.length, r);
-questionCardGenerator(questionList, r);
+function incrementRotation(n) { //Animate progression Rocket
+  const root = document.querySelector(":root");
+  let cssVarIncrementState = getComputedStyle(root).getPropertyValue("--increment");
+  cssVarIncrementState++;
+  root.style.setProperty('--increment', `${cssVarIncrementState}`);
+}
+
+function setAnswerColorTrue(element) { //Handle background-color for good answer
+  element.classList.add("answerColorTrue");
+}
+
+function setAnswerColorFalse(element) { //Handle background-color for wrong answer
+  element.classList.add("answerColorFalse");
+}
+
+function resetAnswerColor(element) { //Reset background-color
+  element.classList.remove("answerColorTrue");
+  element.classList.remove("answerColorFalse");
+}
+
+function disableAnswerClick() { //Prevent multi answer click
+  answer1.classList.add("noClick");
+  answer2.classList.add("noClick");
+  answer3.classList.add("noClick");
+  answer4.classList.add("noClick");
+}
+
+function enableAnswerClick() { //Reset click possibilities
+  answer1.classList.remove("noClick");
+  answer2.classList.remove("noClick");
+  answer3.classList.remove("noClick");
+  answer4.classList.remove("noClick");
+}
+
+function displayNextButton() { //Mutate anchor to next question
+  skipNext.innerHTML = "Next";
+  skipNext.classList.add("next");
+  skipNext.classList.remove("skip");
+}
+
+function displaySkipButton() { //Muttate anchor to skip question 
+  skipNext.innerHTML = "Skip";
+  skipNext.classList.add("skip");
+  skipNext.classList.remove("next");
+}
+
+function displayScoreButton() { //Muttate anchor to score
+  skipNext.innerHTML = "Score";
+  skipNext.href = "../score/score.html";
+  skipNext.classList.remove("skip");
+  skipNext.classList.remove("next");
+}
+
+
+
