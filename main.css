@@ -105,15 +105,12 @@ h1 {
     justify-content: space-around;
     width: 100%;
     position: absolute;
-    top: -10px;
+    top: -10vh;
     z-index: -1;
 }
 
 .star-top-left, .star-top-right, .star-middle-left, .star-middle-right, .star-bottom-left, .star-bottom-right, .star-top-middle, .star-middle-top-left {
     width: 1em;
-    /* position: absolute;
-    top: 10px;
-    z-index: -1; */
     animation:shooting 3s linear infinite; 
 }
 
@@ -132,7 +129,7 @@ h1 {
     }
 
     100% {
-        transform: translateY(80vh);
+        transform: translateY(100vh);
         opacity: 0;
     }
 }
@@ -166,48 +163,16 @@ h1 {
 }
 
 .star-top-left {
-    /* top: 2em;
-    left: 4em; */
     width: 2em;
 }
-
-/* .star-top-right {
-    top: 4em;
-    right: 2em;
-} */
 
 .star-middle-left {
-    /* bottom: 20em;
-    left: 0; */
     width: 2em;
-    
 }
-
-/* .star-middle-right {
-    bottom: 24em;
-    right: 3em;
-}
-
-.star-bottom-left {
-    bottom: 2em;
-    left: 5em;
-}
-
-.star-bottom-right {
-    bottom: 3em;
-    right: 3em;
-} */
 
 .star-top-middle {
-    /* top: 1em;
-    right: 8em; */
     width: 2em;
 }
-
-/* .star-middle-top-left {
-    top: 10em;
-    left: 5em;
-}  */
 
 /* stars tablette et desktop */
 .stars-desktop{
@@ -220,7 +185,6 @@ h1 {
     width: 2em;
     animation:shooting 5s linear infinite;
 }
-
 
 .star-tablette-middle-left {
     left: 16em;
@@ -278,12 +242,6 @@ h1 {
     .button-go {
         padding: 20px 160px;
         font-size: 40px;
-    }
-
-    @keyframes slide {
-        to {
-          background-position: 390px;
-        }
     }
 
     .text-button {
