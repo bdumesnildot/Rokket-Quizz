@@ -14,8 +14,6 @@ const answer2 = document.querySelector("#answer2");
 const answer3 = document.querySelector("#answer3");
 const answer4 = document.querySelector("#answer4");
 const skipNext = document.querySelector(".skipNextButton");
-const skip = document.querySelector(".skip");
-const next = document.querySelector(".next");
 let questionListToDisplay = questionList;
 let gameProgression = 1;
 let score = 0;
@@ -23,7 +21,11 @@ let questionObj = {};
 
 
 
-/*Applying filters on questionListToDisplay */ 
+/*Applying filters on questionListToDisplay */
+
+
+
+
 //WIT
 
 /*INITIATE - Generate a random index question and send it to DOM -------------------------------------------------------------*/
@@ -37,7 +39,6 @@ feedBack();
 answerButton.forEach((answer) => {
   answer.addEventListener("click", () => {
     let answerClicked = document.querySelector(`#${answer.id}`);
-    gameProgression++;
 
     //if user choose the right answer
     if (questionListToDisplay[questionIndex][answer.id][1] === 1) {
@@ -66,45 +67,49 @@ answerButton.forEach((answer) => {
           break;
       }
     }
-
     //Disable click on anwsers
     disableAnswerClick();
 
-    //Display a next button
-    displayNextButton();
+    //Display skip / score button
+    if (gameProgression >= 10) {
+      displayScoreButton()
+    } else {
+      displayNextButton();
+    }
 
   });
 });
 
 
-//clicking skip
-skip.addEventListener("click", (event) => {
-  event.preventDefault();
-  if (gameProgression < 10) {
-    questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
-    questionCardGenerator(questionListToDisplay, questionIndex);
-    gameProgression++;
-    feedBack();
-  }
-})
 
-
-//clicking next
-next.addEventListener("click", (event) => {
-  event.preventDefault();
-  
+skipNext.addEventListener("click", (event) => {
   gameProgression++;
-  progressText.innerHTML = `${gameProgression}/10`;
-
-  questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
-  questionCardGenerator(questionListToDisplay, questionIndex);
+  gameProgression <= 10 ? progressText.innerHTML = `${gameProgression}/10`: "";
 
   feedBack();
-})
 
-//clicking score
-score.addEventListener("click", (event) => {
-  //WIP
+  if (skipNext.classList.contains("skip")) { //clicking skip
+    event.preventDefault();
+    console.log("SKIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP");
+
+    questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
+    questionCardGenerator(questionListToDisplay, questionIndex);
+  
+  } else if (skipNext.classList.contains("next")) { //clicking next
+    event.preventDefault();
+    console.log("NEXTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
+
+    questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
+    questionCardGenerator(questionListToDisplay, questionIndex);
+
+  } else if (skipNext.classList.contains("score")) {
+    console.log("score button pressed");
+
+  } else {
+    event.preventDefault();
+    console.log("toogle Skip next button issue");
+  }
+
 })
 
 
@@ -124,7 +129,7 @@ function questionCardGenerator(list, i) { //Send HTML question to DOM
   resetAnswerColor(answer3);
   resetAnswerColor(answer4);
   enableAnswerClick()
-  displaySkipButton()
+  gameProgression === 10 ? DisplaySkipToScoreButton() : displaySkipButton();
   
   questionObj = list.splice(i,1)[0];
   console.log(questionObj);
@@ -188,11 +193,22 @@ function displaySkipButton() { //Muttate anchor to skip question
   skipNext.classList.remove("next");
 }
 
+function DisplaySkipToScoreButton() {
+  skipNext.innerHTML = "Skip to score";
+  skipNext.href = "../score/score.html";
+  skipNext.classList.add("score");
+  skipNext.classList.remove("skip");
+  skipNext.classList.remove("next");
+  skipNext.style.width = "20%";
+}
+
 function displayScoreButton() { //Muttate anchor to score
   skipNext.innerHTML = "Score";
   skipNext.href = "../score/score.html";
+  skipNext.classList.add("score");
   skipNext.classList.remove("skip");
   skipNext.classList.remove("next");
+  skipNext.style.width = "8%";
 }
 
 

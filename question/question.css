@@ -229,7 +229,7 @@ body div.flexContainerMain div.questionCard .answer:hover {
 }
 
 body div.flexContainerMain div.questionCard a.skipNextButton {
-  width: 10%;
+  width: 8%;
   justify-self: center;
   text-align: center;
   color: var(--color-dark-btn);
