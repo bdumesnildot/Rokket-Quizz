@@ -94,11 +94,11 @@ body div.flexContainerMain div.timerprogress #progressBarEllipse {
 
 body div.flexContainerMain div.timerprogress #progressBarRocketDisc {
   position: absolute;
-  height: 143%;
+  height: 145%;
   left: 0;
   right: 0;
   margin: auto;
-  top: -28px;
+  top: -35px;
   transition: transform 800ms ease-out 300ms;
   transform: rotate(var(--angle)); 
 }

@@ -1,10 +1,12 @@
 
-
 /*get the data from questionDatabase.json -------------------------------------------------------------*/
 const reponse = await fetch("questionsDatabase.json");
 const questionList = await reponse.json();
 
+
+
 /*global variables declaration -------------------------------------------------------------*/
+//DOM and Questions handeling
 const progressText = document.querySelector("#progressText")
 const questionCard = document.querySelector(".questionCard");
 const question = document.querySelector(".question");
@@ -17,56 +19,54 @@ const skipNext = document.querySelector(".skipNextButton");
 let questionListToDisplay = questionList;
 let gameProgression = 1;
 let score = 0;
-let questionObj = {}; 
+let questionObj = {};
+// timer 
+const time = 30;
+let countdown = time;
+let shadow; //store a setInterval
+let timer; //store a setInterval
+let alpha = 0;
+const pi = Math.PI;
+const t = time * 2.77
+const shadowDiscInitial = `<svg width="171" height="171" viewbox="0 0 250 250">
+<path id="shadowDisc" transform="translate(125, 125)" d="" />
+</svg>`
+
+const shadowDiscFull = `<svg width="171" height="171" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="85" cy="85" r="85" fill="#424242" fill-opacity="0.8"/>
+</svg>`;
 
 
 
-/*Applying filters on questionListToDisplay */
+/*Applying filters on questionListToDisplay ----------------------------------------------------*/
 
 
 
 
-//WIT
 
-/*INITIATE - Generate a random index question and send it to DOM -------------------------------------------------------------*/
+/*INITIATE - Generate a random index question and send it to DOM ----------------------------------------------------*/
 let questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
 questionCardGenerator(questionListToDisplay, questionIndex);
 feedBack();
 
-/*Handeling player ansers -------------------------------------------------------------*/
+
+/*Handeling event listeners -------------------------------------------------------------*/
 
 //clicking an answer
 answerButton.forEach((answer) => {
   answer.addEventListener("click", () => {
-    let answerClicked = document.querySelector(`#${answer.id}`);
+    console.log(`you clicked ${answer.id}`);
+    setAnswerColor()
 
     //if user choose the right answer
-    if (questionListToDisplay[questionIndex][answer.id][1] === 1) {
-      setAnswerColorTrue(answerClicked);
-      score++;
+    if (questionObj[answer.id][1] === 1) {
+      score += countdown * 50;
       incrementRotation(1);
-      
-    //if user select the wrong answer
-    } else {
-      setAnswerColorFalse(answerClicked);
-      switch (true) {
-        case questionListToDisplay[questionIndex].answer1[1] === 1:
-          setAnswerColorTrue(answer1);
-          break;
-        case questionListToDisplay[questionIndex].answer2[1] === 1:
-          setAnswerColorTrue(answer2);
-          break;
-        case questionListToDisplay[questionIndex].answer3[1] === 1:
-          setAnswerColorTrue(answer3);
-          break;
-        case questionListToDisplay[questionIndex].answer4[1] === 1:
-          setAnswerColorTrue(answer4);
-          break;
-        default:
-          console.error("answer color switch setter doesn't work");
-          break;
-      }
     }
+
+    //Stop the timer
+    timerGlobalStop()
+
     //Disable click on anwsers
     disableAnswerClick();
 
@@ -77,32 +77,34 @@ answerButton.forEach((answer) => {
       displayNextButton();
     }
 
+    //--dev usage 
+    feedBack(); 
+
   });
 });
 
 
-
-skipNext.addEventListener("click", (event) => {
+skipNext.addEventListener("click", (event) => { //Handle the skip / next / score button
   gameProgression++;
   gameProgression <= 10 ? progressText.innerHTML = `${gameProgression}/10`: "";
 
-  feedBack();
-
   if (skipNext.classList.contains("skip")) { //clicking skip
     event.preventDefault();
-    console.log("SKIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP");
+    feedBack();//--dev usage 
+
+    timerGlobalStop()
 
     questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
     questionCardGenerator(questionListToDisplay, questionIndex);
   
   } else if (skipNext.classList.contains("next")) { //clicking next
     event.preventDefault();
-    console.log("NEXTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
 
     questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
     questionCardGenerator(questionListToDisplay, questionIndex);
 
   } else if (skipNext.classList.contains("score")) {
+    localStorage.setItem('score', score);
     console.log("score button pressed");
 
   } else {
@@ -114,13 +116,16 @@ skipNext.addEventListener("click", (event) => {
 
 
 
+
 /*Functions declaration -------------------------------------------------------------*/
 
 function feedBack() { //log feed back in the console --dev usage
-  console.log("THIS IS A NEW FEED BACK")
-  console.log("Progression on 10 : ", gameProgression);
-  console.log("score : ", score);
-  console.log("question Obj : ", questionObj);
+  let feedBack = {
+    progression : gameProgression,
+    score : score,
+    questionObj : questionObj,
+  }
+  console.log("FEED BACK :\n", feedBack);
 }
 
 function questionCardGenerator(list, i) { //Send HTML question to DOM
@@ -145,6 +150,8 @@ function questionCardGenerator(list, i) { //Send HTML question to DOM
   answer2.innerHTML = answer2Array[0];
   answer3.innerHTML = answer3Array[0];
   answer4.innerHTML = answer4Array[0];
+
+  timerGlobalStart()
 }
 
 function incrementRotation(n) { //Animate progression Rocket
@@ -154,12 +161,14 @@ function incrementRotation(n) { //Animate progression Rocket
   root.style.setProperty('--increment', `${cssVarIncrementState}`);
 }
 
-function setAnswerColorTrue(element) { //Handle background-color for good answer
-  element.classList.add("answerColorTrue");
-}
-
-function setAnswerColorFalse(element) { //Handle background-color for wrong answer
-  element.classList.add("answerColorFalse");
+function setAnswerColor() {
+  for (let i = 1; i < 5; i++) {
+    if (questionObj[`answer${i}`][1] === 1) {
+      document.querySelector(`#answer${i}`).classList.add("answerColorTrue");
+    } else {
+      document.querySelector(`#answer${i}`).classList.add("answerColorFalse");
+    }
+  }
 }
 
 function resetAnswerColor(element) { //Reset background-color
@@ -211,5 +220,62 @@ function displayScoreButton() { //Muttate anchor to score
   skipNext.style.width = "8%";
 }
 
+function timerGlobalStart() { //start draw() + myTimer() functions
+  countdown = time;
+  alpha = 0;
+  document.querySelector("#timerText").innerText = countdown;
+  shadowDiscContainer.innerHTML = shadowDiscInitial;
 
+  shadow = setInterval(() => {
+    draw();
+  }, t);
+  
+  timer = setInterval(() => {
+    myTimer(countdown);
+  }, 1000);
+}
 
+function timerGlobalStop() { //stop draw() + myTimer() functions
+  clearInterval(shadow);
+  clearInterval(timer);
+}
+
+function draw() { //Draw ellipse shadow circle
+  if (alpha === 359) {
+    clearInterval(shadow);
+    shadowDiscContainer.innerHTML = shadowDiscFull;
+  } else if (alpha < 359) {
+    alpha++;
+  } else {
+    alpha;
+  }
+  alpha %= 360;
+  let r = (alpha * pi) / 180;
+  let x = Math.sin(r) * 125;
+  let y = Math.cos(r) * -125;
+  let mid = alpha > 180 ? 1 : 0;
+  let anim = `M 0 0 v -125 A 125 125 1 ${mid} 1 ${x} ${y} z`;
+
+  alpha < 359 ? shadowDisc.setAttribute("d", anim) : "";
+}
+
+function myTimer() { //Display a countdown
+  if (countdown === 1) {
+    clearInterval(timer);
+    setAnswerColor();
+    disableAnswerClick();
+    countdown = 0;
+
+    if (gameProgression >= 10) {
+      displayScoreButton()
+    } else {
+      displayNextButton();
+    }
+    
+  } else if (countdown > 1) {
+    countdown--;
+  } else {
+    countdown;
+  }
+  document.querySelector("#timerText").innerText = countdown;
+}
