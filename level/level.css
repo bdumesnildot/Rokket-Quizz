@@ -18,6 +18,18 @@ body {
   background-position: -73vw 15vh;
   background-size: 150%;
   height: 100vh;
+  animation : backgroundAnimation 2s cubic-bezier(0, 0, 0.18, 1);
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 10vw 25vh;
+    background-size: 180%;
+  }
+  100% {
+    background-position: -73vw 15vh;
+    background-size: 150%;
+  }
 }
 
 body header {
@@ -75,13 +87,25 @@ div button {
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /*-- body background -- */
 
-  body {
-    background-color: var(--background-color);
-    background-image: url("..//assets/svg/points.svg");
-    background-repeat: no-repeat;
+body {
+  background-color: var(--background-color);
+  background-image: url("..//assets/svg/points.svg");
+  background-repeat: no-repeat;
+  background-position: -39vw 15vh;
+  background-size: 110%;
+  animation : backgroundAnimation 2s cubic-bezier(0, 0, 0.18, 1);
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 30vw 20vh;
+    background-size: 130%;
+  }
+  100% {
     background-position: -39vw 15vh;
     background-size: 110%;
   }
+}
 
   /*-- section -- */
 
@@ -132,9 +156,21 @@ div button {
     background-color: var(--background-color);
     background-image: url("..//assets/svg/points.svg");
     background-repeat: no-repeat;
-    background-position: -15vw -4vh;
+    background-position: -15vw 15vh;
     background-size: 76%;
     height: 100vh;
+    animation : backgroundAnimation 2s cubic-bezier(0, 0, 0.18, 1);
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 40vw 2vw;
+      background-size: 90%;
+    }
+    100% {
+      background-position: -15vw 15vh;
+      background-size: 76%;
+    }
   }
 
   section h1 {
