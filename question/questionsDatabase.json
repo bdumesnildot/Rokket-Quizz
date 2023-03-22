@@ -165,7 +165,7 @@
     "categorie": "movie",
     "question": "Mary Poppins Returns: How many children does Mary Poppins look after?",
     "answer1": ["0", 0],
-    "answer2": ["2", 0],
+    "answer2": ["2", 1],
     "answer3": ["3", 0],
     "answer4": ["Oh, loads", 0]
   },
