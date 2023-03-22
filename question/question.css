@@ -80,7 +80,7 @@ body div.flexContainerMain div.timerprogress .progress {
 
   color: var(--color3);
   font-family: var(--font-family-home-h1);
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 body div.flexContainerMain div.timerprogress #progressBarEllipse {
