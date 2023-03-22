@@ -94,8 +94,8 @@
     "level": "easy",
     "categorie": "movie",
     "question": "The Lion King: What's the name of Simba's nasty uncle?",
-    "answer1": ["Scar", 0],
-    "answer2": ["Jafar", 1],
+    "answer1": ["Scar", 1],
+    "answer2": ["Jafar", 0],
     "answer3": ["Gaston", 0],
     "answer4": ["Shere Khan", 0]
   },
