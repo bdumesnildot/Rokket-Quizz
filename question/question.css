@@ -240,6 +240,10 @@ body div.flexContainerMain div.questionCard a.skipNextButton {
   cursor: pointer;
 }
 
+body div.flexContainerMain div.questionCard a.skipNextButton:hover {
+  color: var(--color3);
+}
+
 /* responsive ----------- */
 
 @media screen and (min-width: 360px) and (max-width: 767px) and (orientation: landscape) {
