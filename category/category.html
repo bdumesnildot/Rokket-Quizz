@@ -10,8 +10,8 @@
 <body>
     <!--return button and close-->
     <header>
-        <a href="../level/level.html"><img src="../assets/svg/Back.svg" alt="back to level page"></a>
-        <a href="../index.html"><img src="../assets/svg/quit_cross.svg" alt="quit to home"></a>
+        <a class="quit" href="../level/level.html"><img src="../assets/svg/Back.svg" alt="back to level page"></a>
+        <a class="quit" href="../index.html"><img src="../assets/svg/quit_cross.svg" alt="quit to home"></a>
     </header>
     <!--choose category-->
     <section>
@@ -20,11 +20,11 @@
     
     <!--category-->
     <div> 
-        <button onclick="window.location.href = `../question/question.html`">Movies 🍿</button>
-        <button onclick="window.location.href = `../question/question.html`">Geek 🖥️</button>
-        <button onclick="window.location.href = `../question/question.html`">Food 🍔</button>
-        <button onclick="window.location.href = `../question/question.html`">Chuck 💪</button>
-        <button onclick="window.location.href = `../question/question.html`">Random 🛰️</button>
+        <button id="movie" onclick="window.location.href = `../question/question.html`">Movies 🍿</button>
+        <button id="geek" onclick="window.location.href = `../question/question.html`">Geek 🖥️</button>
+        <button id="food" onclick="window.location.href = `../question/question.html`">Food 🍔</button>
+        <button id="chuck" onclick="window.location.href = `../question/question.html`">Chuck 💪</button>
+        <button id="random" onclick="window.location.href = `../question/question.html`">Random 🛰️</button>
     </div>
 
 <script src="category.js"></script>

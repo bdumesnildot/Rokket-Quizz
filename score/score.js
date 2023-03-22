@@ -1,3 +1,7 @@
+
+
+//Handle stars animation
+
 function starsAnimation(starClass) {
     let stars = document.querySelectorAll(starClass);
     for (let i = 0; i < stars.length; i++) {
@@ -44,7 +48,22 @@ setTimeout(() => {
 }, "4500")
 
 
-/* Add final score */
-const score = localStorage.getItem("score")?.toString();
-const finalScore = JSON.parse(score);
-const newScore = document.querySelector(".scoreContainer h2").textContent = `Score ${finalScore} `;
+
+
+//Handle score display
+const score = localStorage.getItem("score");
+const newScore = document.querySelector(".scoreContainer h2").textContent = `Score ${score} `;
+
+/* clear score */
+const homeClick = document.querySelector(".backHome")
+homeClick.addEventListener("click", function () {
+  localStorage.clear();
+});
+
+/* reset score */
+const replayClick = document.querySelector(".replay")
+replayClick.addEventListener("click", function () {
+  localStorage.removeItem("score");
+});
+
+

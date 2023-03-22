@@ -9,6 +9,7 @@ const questionList = await reponse.json();
 //DOM and Questions handeling
 const progressText = document.querySelector("#progressText")
 const questionCard = document.querySelector(".questionCard");
+const quitButton =  document.querySelector("#quit");
 const question = document.querySelector(".question");
 const answerButton = document.querySelectorAll(".answer");
 const answer1 = document.querySelector("#answer1");
@@ -16,7 +17,6 @@ const answer2 = document.querySelector("#answer2");
 const answer3 = document.querySelector("#answer3");
 const answer4 = document.querySelector("#answer4");
 const skipNext = document.querySelector(".skipNextButton");
-let questionListToDisplay = questionList;
 let gameProgression = 1;
 let score = 0;
 let questionObj = {};
@@ -39,15 +39,17 @@ const shadowDiscFull = `<svg width="171" height="171" viewBox="0 0 170 170" fill
 
 
 /*Applying filters on questionListToDisplay ----------------------------------------------------*/
+let questionListToDisplay = questionList;
+let level = localStorage.getItem('level');
+let categorie = localStorage.getItem('categorie');
 
-
-
+if (level != "random") {questionListToDisplay = questionListToDisplay.filter( (current) => current.level === level)}
+if (categorie != "random") {questionListToDisplay = questionListToDisplay.filter( (current) => current.categorie === categorie)}
 
 
 /*INITIATE - Generate a random index question and send it to DOM ----------------------------------------------------*/
 let questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
 questionCardGenerator(questionListToDisplay, questionIndex);
-feedBack();
 
 
 /*Handeling event listeners -------------------------------------------------------------*/
@@ -77,14 +79,11 @@ answerButton.forEach((answer) => {
       displayNextButton();
     }
 
-    //--dev usage 
-    feedBack(); 
-
   });
 });
 
-
-skipNext.addEventListener("click", (event) => { //Handle the skip / next / score button
+//Handle the skip / next / score button
+skipNext.addEventListener("click", (event) => { 
   gameProgression++;
   gameProgression <= 10 ? progressText.innerHTML = `${gameProgression}/10`: "";
 
@@ -103,7 +102,7 @@ skipNext.addEventListener("click", (event) => { //Handle the skip / next / score
     questionIndex = Math.floor(Math.random() * questionListToDisplay.length);
     questionCardGenerator(questionListToDisplay, questionIndex);
 
-  } else if (skipNext.classList.contains("score")) {
+  } else if (skipNext.classList.contains("score")) { //clicking score
     localStorage.setItem('score', score);
     console.log("score button pressed");
 
@@ -114,7 +113,8 @@ skipNext.addEventListener("click", (event) => { //Handle the skip / next / score
 
 })
 
-
+//Handle quit button
+quitButton.addEventListener("click", () => localStorage.clear());
 
 
 /*Functions declaration -------------------------------------------------------------*/
@@ -137,7 +137,6 @@ function questionCardGenerator(list, i) { //Send HTML question to DOM
   gameProgression === 10 ? DisplaySkipToScoreButton() : displaySkipButton();
   
   questionObj = list.splice(i,1)[0];
-  console.log(questionObj);
   const questionText = questionObj.question;
   const answer1Array = questionObj.answer1;
   const answer2Array = questionObj.answer2;
@@ -152,6 +151,9 @@ function questionCardGenerator(list, i) { //Send HTML question to DOM
   answer4.innerHTML = answer4Array[0];
 
   timerGlobalStart()
+
+  //--dev usage 
+  feedBack(); 
 }
 
 function incrementRotation(n) { //Animate progression Rocket

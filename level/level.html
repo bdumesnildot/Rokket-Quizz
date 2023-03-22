@@ -12,7 +12,7 @@
 <body>
     <!-- button back -->
     <header>
-        <a href="../index.html"><img src="..//assets/svg/Back.svg" alt="button back to home page"></a>
+        <a id="quit" href="../index.html"><img src="..//assets/svg/Back.svg" alt="button back to home page"></a>
     </header>
 
     <section>
@@ -21,11 +21,13 @@
 
     <!-- section button -->
     <div>
-        <button onclick="window.location.href =  '../category/category.html'">Easy 🔫</button>
-        <button onclick="window.location.href =  '../category/category.html'">Medium 🤖</button>
-        <button onclick="window.location.href =  '../category/category.html'">Hard 👾</button>
-        <button onclick="window.location.href =  '../category/category.html'">Random 🛰️</button>
+        <button id="easy" onclick="window.location.href =  '../category/category.html'">Easy 🔫</button>
+        <button id="medium" onclick="window.location.href =  '../category/category.html'">Medium 🤖</button>
+        <button id="hard" onclick="window.location.href =  '../category/category.html'">Hard 👾</button>
+        <button id="random" onclick="window.location.href =  '../category/category.html'">Random 🛰️</button>
     </div>
+
+    <script src="level.js"></script>
 
 </body>
 
