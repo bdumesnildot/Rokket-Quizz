@@ -248,6 +248,12 @@ h1 {
         font-size: 24px;
     }
 
+    @keyframes slide {
+        to {
+          background-position: 400px;
+        }
+    }
+
     /* stars tablettes */
 
     .stars-desktop {
