@@ -74,8 +74,13 @@ a {
     font-size: 35px;
 } 
 
+a:hover {
+    color: var(--color1-dark);
+} 
+
 /*background stars*/
 .animated {
+    animation: flash 10s linear infinite;
     -webkit-animation-duration: 10s;
     animation-duration: 10s;
     -webkit-animation-fill-mode: both;
@@ -414,7 +419,7 @@ a {
     }
     
     h2 {
-        font-size: 45px;
+        font-size: 50px;
     }
     
     /*background stars*/  
