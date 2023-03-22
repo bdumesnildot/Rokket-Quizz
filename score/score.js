@@ -48,3 +48,18 @@ setTimeout(() => {
 const score = localStorage.getItem("score")?.toString();
 const finalScore = JSON.parse(score);
 const newScore = document.querySelector(".scoreContainer h2").textContent = `Score ${finalScore} `;
+
+/* clear score */
+const homeClick = document.querySelector(".backHome")
+homeClick.addEventListener("click", function () {
+    clear.localStorage();
+    });
+
+/* reset score */
+const replayClick = document.querySelector(".replay")
+replayClick.addEventListener("click", function () {
+    remove.setItem("score")
+    localStorage.setItem("score", score);
+    });
+    
+
