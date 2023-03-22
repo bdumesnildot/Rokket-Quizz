@@ -9,9 +9,12 @@
 
 body {
     height: 100vh;
+    max-height: 100vh;
     width: 100vw;
+    max-width: 100vw;
     background-color: var(--background-color);
     font-family: var(--font-family-home-h1);
+    overflow: hidden;
 }
 
 .bodyContainer {
@@ -61,6 +64,7 @@ h2 {
 }
 
 .backContainer {
+    z-index: 10;
     position: absolute;
     bottom: 2%;
     width: 100%;
@@ -77,6 +81,18 @@ a {
 a:hover {
     color: var(--color1-dark);
 } 
+
+.chuck {
+    display: none ;
+    z-index: 2;
+    position: absolute;
+    bottom: 8vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    height: 38vh;
+}
 
 /*background stars*/
 .animated {
@@ -101,7 +117,7 @@ a:hover {
  }
 
 .star {
-    z-index: 1;
+    z-index: -10;
     width: 5%;
     height: 5%;
     -webkit-transition: all 0.5s ease;
@@ -245,6 +261,10 @@ a:hover {
         padding-top: 10%;
     } 
 
+    .chuck {
+        height: 42vh;
+    }
+
 /* background stars */
     .star {
         width: 5%;
@@ -304,6 +324,7 @@ a:hover {
 
 /* iPads ----------- */
 @media screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+
     .scoreRokket {
         top: 9%;
         width: 50%;
@@ -328,6 +349,10 @@ a:hover {
     
     h2 {
         font-size: 55px;
+    }
+
+    .chuck {
+        height: 40vh;
     }
     
     /*background stars*/
@@ -415,11 +440,15 @@ a:hover {
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 3em;
     }
     
     h2 {
         font-size: 50px;
+    }
+
+    .chuck {
+        height: 50vh;
     }
     
     /*background stars*/  

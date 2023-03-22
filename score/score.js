@@ -48,8 +48,6 @@ setTimeout(() => {
 }, "4500")
 
 
-
-
 //Handle score display
 const score = localStorage.getItem("score");
 const newScore = document.querySelector(".scoreContainer h2").textContent = `Score ${score} `;
@@ -65,5 +63,22 @@ const replayClick = document.querySelector(".replay")
 replayClick.addEventListener("click", function () {
   localStorage.removeItem("score");
 });
+
+
+
+// chuck surprise
+let categorie = localStorage.getItem('categorie');
+
+const chuckImg = document.querySelector(".chuck");
+const congratsText = document.querySelector("h1");
+const scoreText = document.querySelector("h2");
+
+if (categorie === "chuck") {
+    chuckImg.style.display = "block";
+    congratsText.innerHTML = "Nobody beats me";
+    scoreText.style.color = "transparent";
+}
+
+
 
 

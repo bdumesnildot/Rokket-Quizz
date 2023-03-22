@@ -210,7 +210,7 @@ function DisplaySkipToScoreButton() {
   skipNext.classList.add("score");
   skipNext.classList.remove("skip");
   skipNext.classList.remove("next");
-  skipNext.style.width = "20%";
+  skipNext.style.width = "45%";
 }
 
 function displayScoreButton() { //Muttate anchor to score

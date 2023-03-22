@@ -7,7 +7,7 @@ body {
     max-height: 100vh;
     min-height: 100vh;
     background-color: var(--background-color);
-    
+    overflow: hidden;
 }
 
 body, .button-go {
