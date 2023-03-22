@@ -42,3 +42,9 @@ setTimeout(() => {
 setTimeout(() => {
     starsAnimation(".starSmallFourth");
 }, "4500")
+
+
+/* Add final score */
+const score = localStorage.getItem("score")?.toString();
+const finalScore = JSON.parse(score);
+const newScore = document.querySelector(".scoreContainer h2").textContent = `Score ${finalScore} `;
