@@ -85,7 +85,7 @@ h1 {
 
 @keyframes slide {
     to {
-      background-position:30vw;
+      background-position: 200px;
     }
 }
   
@@ -100,64 +100,90 @@ h1 {
 
 /* stars */
 /* stars phone */
-.star-top-left, .star-top-right, .star-middle-left, .star-middle-right, .star-bottom-left, .star-bottom-right, .star-top-middle, .star-middle-top-left {
-    width: 1em;
+.stars-phone {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
     position: absolute;
+    top: -10vh;
     z-index: -1;
 }
 
-.star-top-left {
-    top: 2em;
-    left: 4em;
-    width: 2em;
+.star-top-left, .star-top-right, .star-middle-left, .star-middle-right, .star-bottom-left, .star-bottom-right, .star-top-middle, .star-middle-top-left {
+    width: 1em;
+    animation:shooting 3s linear infinite; 
 }
 
-.star-top-right {
-    top: 4em;
-    right: 2em;
+@keyframes shooting {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.stars-phone img:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.stars-phone img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.stars-phone img:nth-child(3) {
+    animation-delay: 2.5s;
+}
+
+.stars-phone img:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.stars-phone img:nth-child(5) {
+    animation-delay: 3.5s;
+}
+
+.stars-phone img:nth-child(6) {
+    animation-delay: 2s;
+}
+
+.stars-phone img:nth-child(7) {
+    animation-delay: 1s;
+}
+
+.star-top-left {
     width: 2em;
 }
 
 .star-middle-left {
-    bottom: 20em;
-    left: 0;
     width: 2em;
 }
 
-.star-middle-right {
-    bottom: 24em;
-    right: 3em;
-}
-
-.star-bottom-left {
-    bottom: 2em;
-    left: 5em;
-}
-
-.star-bottom-right {
-    bottom: 3em;
-    right: 3em;
-}
-
 .star-top-middle {
-    top: 1em;
-    right: 8em;
-}
-
-.star-middle-top-left {
-    top: 10em;
-    left: 5em;
+    width: 2em;
 }
 
 /* stars tablette et desktop */
 .stars-desktop{
     display: none;
-}
+} 
 
 .star-tablette-middle-left, .star-tablette-middle-right, .star-tablette-middle-top, .star-tablette-middle-bottom {
     position: absolute;
     z-index: -1;
     width: 2em;
+    animation:shooting 5s linear infinite;
 }
 
 .star-tablette-middle-left {
@@ -179,6 +205,8 @@ h1 {
     right: 22em;
     bottom: 17em;
 }
+
+
 
 
 /* iPads ----------- */
@@ -218,6 +246,12 @@ h1 {
 
     .text-button {
         font-size: 24px;
+    }
+
+    @keyframes slide {
+        to {
+          background-position: 400px;
+        }
     }
 
     /* stars tablettes */
@@ -268,6 +302,12 @@ h1 {
     .button-go {
         padding: 20px 160px;
         font-size: 40px;
+    }
+
+    @keyframes slide {
+        to {
+          background-position: 400px;
+        }
     }
 
     .text-button {
