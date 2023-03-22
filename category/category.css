@@ -18,6 +18,18 @@ body {
   background-position: 10vw 25vh;
   background-size: 180%;
   height: 100vh;
+  animation : backgroundAnimation 2s cubic-bezier(0, 0, 0.18, 1);
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: -73vw 15vh;
+    background-size: 150%;
+  }
+  100% {
+    background-position: 10vw 25vh;
+    background-size: 180%;
+  }
 }
 
 body header {
@@ -81,6 +93,18 @@ div button {
     background-repeat: no-repeat;
     background-position: 30vw 20vh;
     background-size: 130%;
+    animation : backgroundAnimation 2s cubic-bezier(0, 0, 0.18, 1);
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: -39vw 15vh;
+      background-size: 110%;
+    }
+    100% {
+      background-position: 30vw 20vh;
+      background-size: 130%;
+    }
   }
 
   /*-- section -- */
@@ -135,6 +159,18 @@ div button {
     background-position: 40vw 2vw;
     background-size: 90%;
     height: 100vh;
+    animation : backgroundAnimation 2s cubic-bezier(0, 0, 0.18, 1);
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: -15vw 15vh;
+      background-size: 76%;
+    }
+    100% {
+      background-position: 40vw 2vw;
+      background-size: 90%;
+    }
   }
 
   section h1 {
