@@ -1,9 +1,591 @@
 
+@import url(../variable.css);
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    background-color: var(--background-color);
+    font-family: var(--font-family-home-h1);
+    overflow: hidden;
+}
+
+.bodyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scoreRokket {
+    width: 40%;
+    height: 20%;
+    position: absolute;
+    top: 3%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.scoreMoon{
+    position: absolute;
+    top: 2%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.scoreContainer {
+    position: absolute;
+    top: 2%;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+.backContainer {
+    z-index: 10;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light-text);
+    font-size: 35px;
+} 
+
+a:hover {
+    color: var(--color1-dark);
+} 
+
+.chuck {
+    display: none ;
+    z-index: 2;
+    position: absolute;
+    bottom: 8vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    height: 38vh;
+    animation : spinning 1.2s ease;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(-900deg);
+        scale: 0.01;
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0deg);
+        scale: 1;
+        opacity: 100;
+    }
+
+}
+
+/*background stars*/
+.animated {
+    animation: flash 10s linear infinite;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ }
+ 
+ @keyframes flash {
+    0%, 50%, 100% {
+       opacity: 1;
+    }
+    25%, 75% {
+       opacity: 0;
+    }
+ }
+ 
+ .flash {
+    animation-name: flash;
+ }
+
+.star {
+    z-index: -10;
+    width: 5%;
+    height: 5%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.star:hover {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
+.starSmall {
+    z-index: 1;
+    width: 3%;
+    height: 3%;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+    transition: all 0.5s ease;
+}
+
+.starSmall:hover {
+    transform: scale(1.3);
+    transform: rotate(-15deg);
+}
+
+#star1 {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 12%
+}
+    
+#star2 {
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 20%;
+}
+
+#star3 {
+    display: block;
+    position: absolute;
+    top: 88%;
+    right: 10%;
+}
+
+#star4 {
+    display: none;
+}
+
+#star5 {
+    display: none;
+}
+
+#star6 {
+    display: none;
+}
+
+#star7 {
+    display: none;
+}
+
+#star8 {
+    display: none;
+}
+
+#star9 {
+    display: none;
+}
+
+#star10 {
+    display: block;
+    position: absolute;
+    top: 9%;
+    right: 35%;
+}
+
+#star11 {
+    display: block;
+    position: absolute;
+    top: 18%;
+    right: 8%;
+}
+
+#star12 {
+    display: block;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+
+#star13 {
+    display: block;
+    position: absolute;
+    top: 87%;
+    left: 10%;
+}
+
+#star14 {
+    display: none;
+}
+
+#star15 {
+    display: none;
+}
+
+#star16 {
+    display: none;
+}
+
+/* Iphone XR */
+@media screen and (min-width : 414px) and (max-width : 767px) {
+    .scoreRokket {
+        top: 5%;
+        width: 50%;
+        height: 20%;
+    }
+    
+    .scoreMoon{
+        top: 6%;
+        width: 100%;
+        height: 700px;
+    }
+
+    .scoreContainer {
+        height: 80%;
+        top: 6%;
+        padding-top: 10%;
+    }
+
+    h1 {
+        top: 40%;
+    }
+    
+    h2 {
+        top: 45%;
+        font-size: 55px;
+    }
+
+    a {
+        padding-top: 10%;
+    } 
+
+    .chuck {
+        height: 42vh;
+    }
+
+/* background stars */
+    .star {
+        width: 5%;
+        height: 5%;
+    }
+
+    .starSmall {
+        width: 3%;
+        height: 3%;
+    }
+
+    #star4 {
+        display: block;
+        position: absolute;
+        top: 75%;
+        left: 14%;
+    }
+
+    #star5 {
+        display: none;
+    }
+
+    #star6 {
+        display: none;
+    }
+
+    #star7 {
+        display: none;
+    }
+
+    #star8 {
+        display: none;
+    }
+
+    #star9 {
+        display: none;
+    }
+
+    #star14 {
+        display: block;
+        position: absolute;
+        top: 78%;
+        right: 16%;
+    }
+
+    #star15 {
+        display: block;
+        position: absolute;
+        top: 82%;
+        left: 44%;
+    }
+
+    #star16 {
+        display: none;
+    }
+    }
 
 /* iPads ----------- */
-@media screen and (min-device-width : 768px) and (max-device-width : 1023px) {}
+@media screen and (min-width : 768px) and (max-width : 1023px) {
+
+    .scoreRokket {
+        top: 9%;
+        width: 50%;
+        height: 20%;
+    }
+    
+    .scoreMoon{
+        top: 11%;
+        width: 100%;
+        height: 80%;
+    }
+
+    .scoreContainer {
+        top: 6%;
+        padding-top: 55%;
+        height: 50%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 55px;
+    }
+
+    .chuck {
+        height: 40vh;
+    }
+    
+    /*background stars*/
+    .star {
+        width: 4%;
+        height: 4%;
+    }
+    
+    .starSmall {
+        width: 2.8%;
+        height: 2.8%;
+    }
+
+    #star4 {
+        display: block;
+        position: absolute;
+        top: 75%;
+        left: 14%;
+    }
+    
+    #star5 {
+        display: block;
+        position: absolute;
+        top: 65%;
+        left: 2%;
+    }
+    
+    #star6 {
+        display: block;
+        position: absolute;
+        top: 70%;
+        right: 5%;
+    }
+    
+    #star7 {
+        display: none;
+    }
+    
+    #star8 {
+        display: none;
+    }
+    
+    #star9 {
+        display: none;
+    }
+    
+    #star14 {
+        display: block;
+        position: absolute;
+        top: 78%;
+        right: 16%;
+    }
+    
+    #star15 {
+        display: block;
+        position: absolute;
+        top: 84%;
+        left: 44%;
+    }
+    
+    #star16 {
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 42%;
+    }
+}
 
 /* Desktops ----------- */
-@media screen and (min-width : 1024px) {}
+@media screen and (min-width : 1024px) {
+    .scoreRokket {
+        width: 20%;
+        height: 22.5%;
+    }
+    
+    .scoreMoon{
+        top: 8%;
+        height: 70%;
+    }
+
+    .scoreContainer {
+        top: 8%;
+        padding-top: 5%;
+        height: 60%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 50px;
+    }
+
+    .chuck {
+        height: 50vh;
+    }
+    
+    /*background stars*/  
+    .star {
+        width: 3%;
+        height: 3%;
+    }
+    
+    .starSmall {
+        width: 2.2%;
+        height: 2.2%;
+    }
+
+    #star1 {
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 12%
+    }
+        
+    #star2 {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 20%;
+    }
+    
+    #star3 {
+        display: block;
+        position: absolute;
+        top: 88%;
+        right: 10%;
+    }
+    
+    #star4 {
+        display: block;
+        position: absolute;
+        top: 75%;
+        left: 18%;
+    }
+    
+    #star5 {
+        display: block;
+        position: absolute;
+        top: 58%;
+        left: 5%;
+    }
+    
+    #star6 {
+        display: block;
+        position: absolute;
+        top: 70%;
+        right: 5%;
+    }
+    
+    #star7 {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20%;
+    }
+    
+    #star8 {
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+    
+    #star9 {
+        display: block;
+        position: absolute;
+        top: 30%;
+        right: 12%;
+    }
+    
+    #star10 {
+        display: block;
+        position: absolute;
+        top: 9%;
+        right: 35%;
+    }
+    
+    #star11 {
+        display: block;
+        position: absolute;
+        top: 18%;
+        right: 8%;
+    }
+    
+    #star12 {
+        display: block;
+        position: absolute;
+        top: 16%;
+        left: 10%;
+    }
+    
+    #star13 {
+        display: block;
+        position: absolute;
+        top: 87%;
+        left: 10%;
+    }
+    
+    #star14 {
+        display: block;
+        position: absolute;
+        top: 78%;
+        right: 20%;
+    }
+    
+    #star15 {
+        display: block;
+        position: absolute;
+        top: 84%;
+        left: 44%;
+    }
+    
+    #star16 {
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 37%;
+    }
+}

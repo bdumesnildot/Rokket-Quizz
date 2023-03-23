@@ -1,0 +1,1472 @@
+[
+  {
+    "Id": 1,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Star Wars IV: A New Hope: What species is character Admiral Ackbar?",
+    "answer1": ["Tetramorium jedi", 0],
+    "answer2": ["Peckoltia greedoi", 0],
+    "answer3": ["Agathidium vaderi", 0],
+    "answer4": ["Mon Calamari", 1]
+  },
+  {
+    "Id": 2,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Home Alone 2: Lost in New York: Which US President gives Kevin McAllister directions?",
+    "answer1": ["Barack Obama", 0],
+    "answer2": ["George W. Bush", 0],
+    "answer3": ["Donald Trump", 1],
+    "answer4": ["George Bush", 0]
+  },
+  {
+    "Id": 3,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "Frozen: What's the name of the giant snow monster that guards Elsa's palace?",
+    "answer1": ["Wampa", 0],
+    "answer2": ["Marshmallow", 1],
+    "answer3": ["Frosty", 0],
+    "answer4": ["Soft Scoop", 0]
+  },
+  {
+    "Id": 4,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Finding Nemo: What is the name of Nemo's dad?",
+    "answer1": ["Joe", 0],
+    "answer2": ["David", 0],
+    "answer3": ["Kevin", 0],
+    "answer4": ["Marlin", 1]
+  },
+  {
+    "Id": 5,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Toy Story: What is the name of Andy's mean neighbour?",
+    "answer1": ["Johnny", 0],
+    "answer2": ["Sid", 1],
+    "answer3": ["Steve", 0],
+    "answer4": ["Paul", 0]
+  },
+  {
+    "Id": 6,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "WALL-E: What does WALL-E stand for?",
+    "answer1": ["World Administration Life Locator Electrical", 0],
+    "answer2": ["Waste Allocation Load Lifter Earth-Class", 1],
+    "answer3": ["Waste Alien Location Lever Electrifier", 0],
+    "answer4": ["Weird Aliens Love Laughing at Earth", 0]
+  },
+  {
+    "Id": 7,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Beauty and the Beast: What are these two characters called?",
+    "answer1": ["Waxy and Clockman", 0],
+    "answer2": ["Lumiere and Cogsworth", 1],
+    "answer3": ["Flicker and Ticker", 0],
+    "answer4": ["Flame and Tock", 0]
+  },
+  {
+    "Id": 8,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "The LEGO Movie 2: The Second Part: What is Emmet's surname? ",
+    "answer1": ["Lago", 0],
+    "answer2": ["Loggo", 0],
+    "answer3": ["Smith", 0],
+    "answer4": ["Brickowski", 1]
+  },
+  {
+    "Id": 9,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Moana: What's the name of this bling-loving crab?",
+    "answer1": ["Hei Hei", 0],
+    "answer2": ["Tamatoa", 1],
+    "answer3": ["Tui", 0],
+    "answer4": ["Maui", 0]
+  },
+  {
+    "Id": 10,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "The Lion King: What's the name of Simba's nasty uncle?",
+    "answer1": ["Scar", 1],
+    "answer2": ["Jafar", 0],
+    "answer3": ["Gaston", 0],
+    "answer4": ["Shere Khan", 0]
+  },
+  {
+    "Id": 11,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Shrek 2: Which object is stuck in Puss in Boots' hat?",
+    "answer1": ["A pencil", 0],
+    "answer2": ["A marmalade sandwich", 0],
+    "answer3": ["A fluffy feather", 1],
+    "answer4": ["A ribbon", 0]
+  },
+  {
+    "Id": 12,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "The Incredibles 2: What is the name of Lucius Best's superhero character?",
+    "answer1": ["The Ice Man", 0],
+    "answer2": ["Frosty the Destroyer", 0],
+    "answer3": ["Snowman", 0],
+    "answer4": ["Frozone", 1]
+  },
+  {
+    "Id": 13,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Despicable Me: How many sisters does Agnes have?",
+    "answer1": ["1", 0],
+    "answer2": ["2", 1],
+    "answer3": ["3", 0],
+    "answer4": ["4", 0]
+  },
+  {
+    "Id": 14,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Harry Potter and the Philosopher's Stone: What type of sweet jumps out of Harry's hand on the train?",
+    "answer1": ["Magic bubblegum", 0],
+    "answer2": ["Chocolate frog", 1],
+    "answer3": ["A mystical Curly Wurly", 0],
+    "answer4": ["One of those weird jellybeans", 0]
+  },
+  {
+    "Id": 15,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Elf: What does Buddy pour on his spaghetti in this scene?",
+    "answer1": ["Pasta sauce", 0],
+    "answer2": ["Ketchup", 0],
+    "answer3": ["Maple syrup", 1],
+    "answer4": ["Gravy", 0]
+  },
+  {
+    "Id": 16,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "How to Train Your Dragon: What is this fearsome warrior's name?",
+    "answer1": ["Bloodaxe", 0],
+    "answer2": ["Skullthunder", 0],
+    "answer3": ["Stormking", 0],
+    "answer4": ["Hiccup", 1]
+  },
+  {
+    "Id": 17,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Mary Poppins Returns: How many children does Mary Poppins look after?",
+    "answer1": ["0", 0],
+    "answer2": ["2", 1],
+    "answer3": ["3", 0],
+    "answer4": ["Oh, loads", 0]
+  },
+  {
+    "Id": 18,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Inside Out: What is this thoroughly reasonable character called?",
+    "answer1": ["Fear", 0],
+    "answer2": ["Joy", 0],
+    "answer3": ["Sadness", 0],
+    "answer4": ["Anger", 1]
+  },
+  {
+    "Id": 19,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "The Little Mermaid: What type of animal is Sebastian?",
+    "answer1": ["Lobster", 0],
+    "answer2": ["Krill", 0],
+    "answer3": ["Crab", 1],
+    "answer4": ["Crayfish", 0]
+  },
+  {
+    "Id": 20,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Aladdin: What type of monkey is Abu?",
+    "answer1": ["Mandrill", 0],
+    "answer2": ["Proboscis monkey", 0],
+    "answer3": ["Dusky leaf monkey", 0],
+    "answer4": ["Capuchin monkey", 1]
+  },
+  {
+    "Id": 21,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Peter Rabbit: In whose garden does Peter accidentally leave his coat? ",
+    "answer1": ["Derek", 0],
+    "answer2": ["Mr. McGregor", 1],
+    "answer3": ["Johnny Town-Mouse", 0],
+    "answer4": ["Jeremy Fisher", 0]
+  },
+  {
+    "Id": 22,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "The Nightmare Before Christmas: Where does Jack Skellington live?",
+    "answer1": ["Christmas Town", 0],
+    "answer2": ["Easter Town", 0],
+    "answer3": ["Dunstable", 0],
+    "answer4": ["Halloween Town", 1]
+  },
+  {
+    "Id": 23,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "Coco: What is Miguel's canine companion called?",
+    "answer1": ["Rover", 0],
+    "answer2": ["Fang", 0],
+    "answer3": ["Jeff", 0],
+    "answer4": ["Dante", 1]
+  },
+  {
+    "Id": 24,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Onward: What are the names of these two brothers?",
+    "answer1": ["Angus and Malcolm Lightfoot", 0],
+    "answer2": ["Duncan and Bruce Lightfoot", 0],
+    "answer3": ["Ian and Barley Lightfoot", 0],
+    "answer4": ["Grant and Phil Lightfoot", 1]
+  },
+  {
+    "Id": 25,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Jumanji: How many Jumanji films have been made so far?",
+    "answer1": ["1", 0],
+    "answer2": ["2", 0],
+    "answer3": ["3", 1],
+    "answer4": ["7", 0]
+  },
+  {
+    "Id": 26,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Tangled: Which fairytale is this film based on?",
+    "answer1": ["Sleeping Beauty", 0],
+    "answer2": ["Hansel and Gretel", 0],
+    "answer3": ["Rapunzel", 1],
+    "answer4": ["The Horse and the Sword", 0]
+  },
+  {
+    "Id": 27,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "The Jungle Book: What is the 'red flower' that King Louie wants so badly?",
+    "answer1": ["A rose", 0],
+    "answer2": ["A poppy", 0],
+    "answer3": ["Red Trumpet Creeper", 0],
+    "answer4": ["Actual fire", 1]
+  },
+  {
+    "Id": 28,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Zootopia: Where is Judy Hopps from originally?",
+    "answer1": ["Bunnyburrow", 1],
+    "answer2": ["Warrendale", 0],
+    "answer3": ["Carrotville", 0],
+    "answer4": ["New York City", 0]
+  },
+  {
+    "Id": 29,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Willy Wonka & The Chocolate Factory: How many 'golden tickets' were hidden inside Wonka bars?",
+    "answer1": ["3", 0],
+    "answer2": ["5", 1],
+    "answer3": ["8", 0],
+    "answer4": ["10", 0]
+  },
+  {
+    "Id": 30,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "Up: What is the name of the talking dog?",
+    "answer1": ["Dawg", 0],
+    "answer2": ["Dig", 0],
+    "answer3": ["Dog", 0],
+    "answer4": ["Dug", 1]
+  },
+  {
+    "Id": 31,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Labyrinth: Where does Sarah first meet Sir Didymus?",
+    "answer1": ["The local video arcade", 0],
+    "answer2": ["Jareth's Castle", 0],
+    "answer3": ["The Bog of Eternal Stench", 1],
+    "answer4": ["A supermarket", 0]
+  },
+  {
+    "Id": 32,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Paddington: Where does he keep his marmalade sandwiches?",
+    "answer1": ["In his duffle coat pocket", 0],
+    "answer2": ["In his satchel", 0],
+    "answer3": ["In a lunch box", 0],
+    "answer4": ["Under his hat", 1]
+  },
+  {
+    "Id": 33,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Dumbo: What is Dumbo's mother called?",
+    "answer1": ["Mrs. Dumbo", 0],
+    "answer2": ["Mrs. Jumbo", 1],
+    "answer3": ["Nellie", 0],
+    "answer4": ["Peanut", 0]
+  },
+  {
+    "Id": 34,
+    "level": "easy",
+    "categorie": "movie",
+    "question": "Ratatouille: Which restaurant does Remy secretly work at?",
+    "answer1": ["La Souris", 0],
+    "answer2": ["La Nourriture", 0],
+    "answer3": ["Gusteau's", 1],
+    "answer4": ["La Souriciere", 0]
+  },
+  {
+    "Id": 35,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Big: How old was Josh Baskin before a wish to become an adult came true?",
+    "answer1": ["10", 0],
+    "answer2": ["12", 1],
+    "answer3": ["13", 0],
+    "answer4": ["9", 0]
+  },
+  {
+    "Id": 36,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Fantastic Mr. Fox: Which of following farmers were not after Mr. Fox?",
+    "answer1": ["Boggis", 0],
+    "answer2": ["Bunce", 0],
+    "answer3": ["Giles", 1],
+    "answer4": ["Bean", 0]
+  },
+  {
+    "Id": 37,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Wreck-it Ralph: Which game does Wreck-It Ralph appear in?",
+    "answer1": ["Fix-It Felix Jr.", 1],
+    "answer2": ["Fix-It Frank Jr.", 0],
+    "answer3": ["Fix-It Finley Jr.", 0],
+    "answer4": ["Fix-It Fernando Jr.", 0]
+  },
+  {
+    "Id": 38,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "Star Wars: The Last Jedi: On which planet does Rey meet Luke Skywalker?",
+    "answer1": ["Bespin", 0],
+    "answer2": ["Dagobah", 0],
+    "answer3": ["Ahch-To", 1],
+    "answer4": ["Jakku", 0]
+  },
+  {
+    "Id": 39,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Monsters, Inc.: Who aims to beat Scully as top scarer?",
+    "answer1": ["Henry J. Waternoose III", 0],
+    "answer2": ["Randall Boggs", 1],
+    "answer3": ["Pete 'Claws' Ward", 0],
+    "answer4": ["Needleman", 0]
+  },
+  {
+    "Id": 40,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "E.T. the Extra-Terrestrial:  What's the name of the boy riding this bike?",
+    "answer1": ["Ethan", 0],
+    "answer2": ["Everett", 0],
+    "answer3": ["Elijah", 0],
+    "answer4": ["Elliott", 1]
+  },
+  {
+    "Id": 41,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Chitty Chitty Bang Bang: What's the name of the inventor in this film?",
+    "answer1": ["Q", 0],
+    "answer2": ["Caractacus Potts", 1],
+    "answer3": ["Wayne Szalinski", 0],
+    "answer4": ["Doctor Emmett Lathrop Brown", 0]
+  },
+  {
+    "Id": 42,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "Brave: Which country does this story take place?",
+    "answer1": ["England", 0],
+    "answer2": ["Ireland", 0],
+    "answer3": ["Wales", 0],
+    "answer4": ["Scotland", 1]
+  },
+  {
+    "Id": 43,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "Cars: Who's this turbo-charged hero?",
+    "answer1": ["Lightning McQueen", 1],
+    "answer2": ["Lightning Hopkins", 0],
+    "answer3": ["Lightning Thunderpants", 0],
+    "answer4": ["Lightning Mansell", 0]
+  },
+  {
+    "Id": 44,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "Babe: Which farmer takes Babe home to live on his farm?",
+    "answer1": ["Arthur Hoggett", 1],
+    "answer2": ["Arthur Trotter", 0],
+    "answer3": ["Arthur Bacon", 0],
+    "answer4": ["Arthur Boar", 0]
+  },
+  {
+    "Id": 45,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "Back to the Future: To which year does Marty McFly travel back in time?",
+    "answer1": ["1919", 0],
+    "answer2": ["1955", 1],
+    "answer3": ["1976", 0],
+    "answer4": ["1984", 0]
+  },
+  {
+    "Id": 46,
+    "level": "hard",
+    "categorie": "movie",
+    "question": "The Karate Kid: What is the name of Mr. Han's young martial arts student?",
+    "answer1": ["Dre Parker", 1],
+    "answer2": ["Johnny Lawrence", 0],
+    "answer3": ["Daniel LaRusso", 0],
+    "answer4": ["John Kreese", 0]
+  },
+  {
+    "Id": 47,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "Raiders of the Lost Ark: What job does Indiana Jones do?",
+    "answer1": ["Maths tutor", 0],
+    "answer2": ["Archaeology professor", 1],
+    "answer3": ["Painter", 0],
+    "answer4": ["Social media influencer", 0]
+  },
+  {
+    "Id": 48,
+    "level": "medium",
+    "categorie": "movie",
+    "question": "Jurassic World: Fallen Kingdom: Which job did Owen Grady use to have at Jurassic World?",
+    "answer1": ["Cashier", 0],
+    "answer2": ["Velociraptor handler", 1],
+    "answer3": ["Chef", 0],
+    "answer4": ["Electrician", 0]
+  },
+  {
+    "Id": 49,
+    "level": "hard",
+    "categorie": "food",
+    "question": "The world's most expensive pizza includes caviar and takes three chefs to prepare it. How much does it cost?",
+    "answer1": ["$50", 0],
+    "answer2": ["$12,000", 1],
+    "answer3": ["$39.99", 0],
+    "answer4": ["$1000", 0]
+  },
+  {
+    "Id": 50,
+    "level": "medium",
+    "categorie": "food",
+    "question": "American cheese originates from which country?",
+    "answer1": ["The United States of America", 0],
+    "answer2": ["Switzerland", 1],
+    "answer3": ["Iceland", 0],
+    "answer4": ["Mozambique", 0]
+  },
+  {
+    "Id": 51,
+    "level": "hard",
+    "categorie": "food",
+    "question": "What percentage of the world's hazelnuts are used to make Nutella?",
+    "answer1": ["2%", 0],
+    "answer2": ["12%", 0],
+    "answer3": ["25%", 1],
+    "answer4": ["100%", 0]
+  },
+  {
+    "Id": 52,
+    "level": "hard",
+    "categorie": "food",
+    "question": "Which type of food is stolen the most all over the world?",
+    "answer1": ["Slices of American cheese", 0],
+    "answer2": ["Cheese", 1],
+    "answer3": ["Figs covered in mustard", 0],
+    "answer4": ["bars of chocolate", 0]
+  },
+  {
+    "Id": 53,
+    "level": "easy",
+    "categorie": "food",
+    "question": "The Hawaiian pizza has ham and, most controversially, pineapple as its toppings. Where does it originate from?",
+    "answer1": ["Honolulu", 0],
+    "answer2": ["Spain", 0],
+    "answer3": ["Waipahu", 0],
+    "answer4": ["Canada", 1]
+  },
+  {
+    "Id": 54,
+    "level": "hard",
+    "categorie": "food",
+    "question": "Spam is a combination of which two words?",
+    "answer1": ["Spinach and ham", 0],
+    "answer2": ["Spice and ham", 1],
+    "answer3": ["Spelt and ham", 0],
+    "answer4": ["Speckled and ham", 0]
+  },
+  {
+    "Id": 55,
+    "level": "medium",
+    "categorie": "food",
+    "question": "How long does it take for a pineapple to grow?",
+    "answer1": ["6 minutes", 0],
+    "answer2": ["12 weeks", 0],
+    "answer3": ["12 months", 0],
+    "answer4": ["24 months", 1]
+  },
+  {
+    "Id": 56,
+    "level": "hard",
+    "categorie": "food",
+    "question": "Which one of the following dishes is not Scottish?",
+    "answer1": ["Cullen Skink", 0],
+    "answer2": ["Neeps and Tatties", 0],
+    "answer3": ["Haggis", 0],
+    "answer4": ["Colcannon", 1]
+  },
+  {
+    "Id": 57,
+    "level": "hard",
+    "categorie": "food",
+    "question": "What wouldn't you find in a Bubble & Squeak?",
+    "answer1": ["Cabbage", 0],
+    "answer2": ["Potato", 0],
+    "answer3": ["Brussels Sprouts", 0],
+    "answer4": ["Bacon", 1]
+  },
+  {
+    "Id": 58,
+    "level": "easy",
+    "categorie": "food",
+    "question": "What does Mille-feuille mean in French?",
+    "answer1": ["Layers of vanilla", 0],
+    "answer2": ["Miniature tree", 0],
+    "answer3": ["A thousand sheets", 1],
+    "answer4": ["Curd topping", 0]
+  },
+  {
+    "Id": 59,
+    "level": "hard",
+    "categorie": "food",
+    "question": "What is the main ingredient of a toad in the hole?",
+    "answer1": ["Carrot", 0],
+    "answer2": ["Strawberry", 0],
+    "answer3": ["Sausage", 1],
+    "answer4": ["Chickpea", 0]
+  },
+  {
+    "Id": 60,
+    "level": "hard",
+    "categorie": "food",
+    "question": "In which country can you find a dish called ??Rumbledethumps?",
+    "answer1": ["Ireland", 0],
+    "answer2": ["England", 0],
+    "answer3": ["Australia", 0],
+    "answer4": ["Scotland", 1]
+  },
+  {
+    "Id": 61,
+    "level": "easy",
+    "categorie": "food",
+    "question": "Vacherin is a French dessert. What does Vache mean in French?",
+    "answer1": ["Strawberry", 0],
+    "answer2": ["Raspberry", 0],
+    "answer3": ["Cow", 1],
+    "answer4": ["Light", 0]
+  },
+  {
+    "Id": 62,
+    "level": "hard",
+    "categorie": "food",
+    "question": "What are Angels on horseback?",
+    "answer1": ["Oysters wrapped in Bacon", 1],
+    "answer2": ["Mussels wrapped in Bacon", 0],
+    "answer3": ["Prawns wrapped in Bacon", 0],
+    "answer4": ["Croutons wrapped in Bacon", 0]
+  },
+  {
+    "Id": 63,
+    "level": "hard",
+    "categorie": "food",
+    "question": "Which fish is used in a Scotch woodcock?",
+    "answer1": ["Haddock", 0],
+    "answer2": ["Anchovies", 1],
+    "answer3": ["Sardines", 0],
+    "answer4": ["Eel", 0]
+  },
+  {
+    "Id": 64,
+    "level": "medium",
+    "categorie": "food",
+    "question": "Which one of these is NOT a major food group?",
+    "answer1": ["Protein", 0],
+    "answer2": ["Carbohydrates", 0],
+    "answer3": ["Chocolate", 1],
+    "answer4": ["Fruits & vegetables", 0]
+  },
+  {
+    "Id": 65,
+    "level": "medium",
+    "categorie": "food",
+    "question": "How long have humans been making beer for?",
+    "answer1": ["Over 7,000 years", 1],
+    "answer2": ["Over 700 years", 0],
+    "answer3": ["Over 70 years", 0],
+    "answer4": ["Over 70,000 years", 0]
+  },
+  {
+    "Id": 66,
+    "level": "easy",
+    "categorie": "food",
+    "question": "Which of these is NOT a herb?",
+    "answer1": ["Thyme", 0],
+    "answer2": ["Rosemary", 0],
+    "answer3": ["Potatoes", 1],
+    "answer4": ["Basilic", 0]
+  },
+  {
+    "Id": 67,
+    "level": "hard",
+    "categorie": "food",
+    "question": "Which of these is a real soup?",
+    "answer1": ["Lockaleekie", 1],
+    "answer2": ["Munchymunch", 0],
+    "answer3": ["Duckamokie", 0],
+    "answer4": ["Duckysoo", 0]
+  },
+  {
+    "Id": 68,
+    "level": "easy",
+    "categorie": "food",
+    "question": "How much water should you drink a day, on average?",
+    "answer1": ["Around 6 to 8 glasses", 1],
+    "answer2": ["Around 3-4 glasses", 0],
+    "answer3": ["Around 1-2 glasses", 0],
+    "answer4": ["Around 9-12 glasses", 0]
+  },
+  {
+    "Id": 69,
+    "level": "medium",
+    "categorie": "food",
+    "question": "Which of these is not an ingredients in cake?",
+    "answer1": ["Eggs", 0],
+    "answer2": ["Beef", 1],
+    "answer3": ["Flour", 0],
+    "answer4": ["Fishes", 0]
+  },
+  {
+    "Id": 70,
+    "level": "hard",
+    "categorie": "food",
+    "question": "Which of these are related to fungus?",
+    "answer1": ["Yeast", 1],
+    "answer2": ["Tomatoes", 0],
+    "answer3": ["Potatoes", 0],
+    "answer4": ["Carrot", 0]
+  },
+  {
+    "Id": 71,
+    "level": "easy",
+    "categorie": "food",
+    "question": "Which country does pasta come from?",
+    "answer1": ["France", 0],
+    "answer2": ["Spain", 0],
+    "answer3": ["Italy", 1],
+    "answer4": ["Senegal", 0]
+  },
+  {
+    "Id": 72,
+    "level": "medium",
+    "categorie": "food",
+    "question": "Which of these is not technically a nut?",
+    "answer1": ["Brazil nut", 0],
+    "answer2": ["Peanut", 1],
+    "answer3": ["Pecan nut", 0],
+    "answer4": ["Coconut", 0]
+  },
+  {
+    "Id": 73,
+    "level": "hard",
+    "categorie": "food",
+    "question": "When was hot chocolate invented?",
+    "answer1": ["The 16th century", 0],
+    "answer2": ["the 17th century", 0],
+    "answer3": ["The 18th century", 1],
+    "answer4": ["The 15th century", 0]
+  },
+  {
+    "Id": 74,
+    "level": "hard",
+    "categorie": "food",
+    "question": "How many burgers does McDonalds sell a day?",
+    "answer1": ["About 6.5 million", 1],
+    "answer2": ["About 8 million", 0],
+    "answer3": ["About 12 million", 0],
+    "answer4": ["About 3.5 million", 0]
+  },
+  {
+    "Id": 75,
+    "level": "easy",
+    "categorie": "food",
+    "question": "What vegetable are crisps typically made out of?",
+    "answer1": ["Turnips", 0],
+    "answer2": ["Potatoes", 1],
+    "answer3": ["Carrots", 0],
+    "answer4": ["cabbage", 0]
+  },
+  {
+    "Id": 76,
+    "level": "hard",
+    "categorie": "food",
+    "question": "What is tea made of?",
+    "answer1": ["Beans", 0],
+    "answer2": ["Roots", 0],
+    "answer3": ["Leaves", 1],
+    "answer4": ["Flowers", 0]
+  },
+  {
+    "Id": 77,
+    "level": "easy",
+    "categorie": "food",
+    "question": "What food is more addictive than some drugs?",
+    "answer1": ["Salt", 0],
+    "answer2": ["Pepper", 0],
+    "answer3": ["Sugar", 1],
+    "answer4": ["M&Ms", 0]
+  },
+  {
+    "Id": 78,
+    "level": "medium",
+    "categorie": "food",
+    "question": "Which of these is NOT a spice?",
+    "answer1": ["Tumeric", 0],
+    "answer2": ["Garlic", 1],
+    "answer3": ["Cinnamon", 0],
+    "answer4": ["chipotle", 0]
+  },
+  {
+    "Id": 79,
+    "level": "easy",
+    "categorie": "food",
+    "question": "How do peaches grow?",
+    "answer1": ["Underground", 0],
+    "answer2": ["On vines", 0],
+    "answer3": ["On trees", 1],
+    "answer4": ["On moon", 0]
+  },
+  {
+    "Id": 80,
+    "level": "hard",
+    "categorie": "food",
+    "question": "What is milk a source of?",
+    "answer1": ["Water", 0],
+    "answer2": ["Calcium", 1],
+    "answer3": ["Sunlight", 0],
+    "answer4": ["Electricity", 0]
+  },
+  {
+    "Id": 81,
+    "level": "hard",
+    "categorie": "food",
+    "question": "In history, what was the job of a 'spit dog'?",
+    "answer1": ["To pick out lice from food before people ate it", 0],
+    "answer2": ["To turn the spit that roasted meat", 1],
+    "answer3": ["To herd cows", 0],
+    "answer4": ["To make war", 0]
+  },
+  {
+    "Id": 82,
+    "level": "hard",
+    "categorie": "food",
+    "question": "Complete the phrase 'Nice as...?'",
+    "answer1": ["Pie", 1],
+    "answer2": ["Pickles", 0],
+    "answer3": ["Pumpkins", 0],
+    "answer4": ["Camembert", 0]
+  },
+  {
+    "Id": 83,
+    "level": "hard",
+    "categorie": "food",
+    "question": "What fruit is wine traditionally made from?",
+    "answer1": ["Gooseberries", 0],
+    "answer2": ["Grapes", 1],
+    "answer3": ["Raspberries", 0],
+    "answer4": ["Apple", 0]
+  },
+  {
+    "Id": 84,
+    "level": "medium",
+    "categorie": "food",
+    "question": "Which language is the word 'Restaurant' from?",
+    "answer1": ["Portuguese", 0],
+    "answer2": ["Danish", 0],
+    "answer3": ["French", 1],
+    "answer4": ["Japanese", 0]
+  },
+  {
+    "Id": 85,
+    "level": "medium",
+    "categorie": "food",
+    "question": "Which of these is a type of salad?",
+    "answer1": ["Nero Salad", 0],
+    "answer2": ["Caesar Salad", 1],
+    "answer3": ["Brutus Salad", 0],
+    "answer4": ["Wild Salad", 0]
+  },
+  {
+    "Id": 86,
+    "level": "easy",
+    "categorie": "food",
+    "question": "Which of these grows in the ground?",
+    "answer1": ["Onions", 1],
+    "answer2": ["Tomatoes", 0],
+    "answer3": ["Blackberries", 0],
+    "answer4": ["Apples", 0]
+  },
+  {
+    "Id": 87,
+    "level": "medium",
+    "categorie": "food",
+    "question": "Who brought potatoes to England for the first time?",
+    "answer1": ["Francis Drake", 0],
+    "answer2": ["Charles Dickens", 1],
+    "answer3": ["Winston Churchill", 0],
+    "answer4": ["Queen Victoria", 0]
+  },
+  {
+    "Id": 88,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "Which of the following characters does not feature in 'Batman Arkham: Asylum'?",
+    "answer1": ["Killer Croc", 0],
+    "answer2": ["Poison Ivy", 0],
+    "answer3": ["The Penguin", 1],
+    "answer4": ["Mr. Zsasz", 0]
+  },
+  {
+    "Id": 89,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "In 'Assassins Creed 3', what is Connor's last name?",
+    "answer1": ["Portdaven", 0],
+    "answer2": ["Davenport", 1],
+    "answer3": ["Da Firenze", 0],
+    "answer4": ["Auditore", 0]
+  },
+  {
+    "Id": 90,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "How many 'Metal Gear' games were made for the PlayStation 3?",
+    "answer1": ["None. They are all on PS1 and PS2", 0],
+    "answer2": ["Five", 0],
+    "answer3": ["Eight", 1],
+    "answer4": ["Three", 0]
+  },
+  {
+    "Id": 91,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "What is the full name of the first 'Jak and Daxter' title?",
+    "answer1": ["Jak and Daxter: Legend of the Eco", 0],
+    "answer2": ["Jak and Daxter: Renegade", 0],
+    "answer3": ["Jak and Daxter: Gladiator", 0],
+    "answer4": ["Jak and Daxter: The Precursor Legacy", 1]
+  },
+  {
+    "Id": 92,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "Who are the two characters you can play as in 'Resident Evil 5'?",
+    "answer1": ["Chris and Sheva", 1],
+    "answer2": ["Wesker and Leon", 0],
+    "answer3": ["Leon and Chris", 0],
+    "answer4": ["Sheva and Leon", 0]
+  },
+  {
+    "Id": 93,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "Which one of these series does not have a 'Lego' game?",
+    "answer1": ["Indiana Jones", 0],
+    "answer2": ["Transformers", 1],
+    "answer3": ["Marvel", 0],
+    "answer4": ["Lord of the Rings", 0]
+  },
+  {
+    "Id": 94,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "What species is Ratchet from 'Ratchet and Clank'?",
+    "answer1": ["Cragmite", 0],
+    "answer2": ["Zoni", 0],
+    "answer3": ["Lombax", 1],
+    "answer4": ["Protopet", 0]
+  },
+  {
+    "Id": 95,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "The main character from 'Ninja Gaiden', Ryu Hayabusa stars in what other game series?",
+    "answer1": ["Virtua Fighter", 0],
+    "answer2": ["All of these", 0],
+    "answer3": ["Metal Gear", 0],
+    "answer4": ["Dead or Alive", 1]
+  },
+  {
+    "Id": 96,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "Who are the developers of the 'Uncharted' series?",
+    "answer1": ["Ubisoft", 0],
+    "answer2": ["Insomniac", 0],
+    "answer3": ["Naughty Dog", 1],
+    "answer4": ["Santa Monica Studios", 0]
+  },
+  {
+    "Id": 97,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "Roman Bellic is from which game series?",
+    "answer1": ["Max Payne", 0],
+    "answer2": ["Red Dead Redemption", 0],
+    "answer3": ["Grand Theft Auto", 1],
+    "answer4": ["LA Noire", 0]
+  },
+  {
+    "Id": 98,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "What developer responsible for 'You Don't Know Jack!'' created party packs containing multiplayer titles like 'Fibbage', 'Quiplash', and 'Trivia Murder Party'?",
+    "answer1": ["Behaviour", 0],
+    "answer2": ["Jackbox", 1],
+    "answer3": ["Nintendo", 0],
+    "answer4": ["Mojang", 0]
+  },
+  {
+    "Id": 99,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "It may seem 'sus', but in what social deduction video game do you try to identify imposters while completing menial space-tasks?",
+    "answer1": ["Spaceteam", 0],
+    "answer2": ["Betrayal", 0],
+    "answer3": ["Among Us", 1],
+    "answer4": ["Werewolf", 0]
+  },
+  {
+    "Id": 100,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "You're one of sixty beans, just trying to survive and make it to the end for a golden crown in which of these 2020 party games?",
+    "answer1": ["Gangbeasts", 0],
+    "answer2": ["Rocket League", 0],
+    "answer3": ["Splatoon", 0],
+    "answer4": ["Fall Guys: Ultimate Knockout", 1]
+  },
+  {
+    "Id": 101,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "Tick tock! You'll have to work 'manually' with teammates to avoid failing your mission in what 2015 cooperative game originally envisioned as a virtual reality demo?",
+    "answer1": ["Bomb Co.", 0],
+    "answer2": ["Valorant", 0],
+    "answer3": ["Deactivators", 0],
+    "answer4": ["Keep Talking and Nobody Explodes", 1]
+  },
+  {
+    "Id": 102,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "Up to four people can scramble around the kitchen in what 2016 cooperative cooking game that leads players to fight the Ever Peckish?",
+    "answer1": ["Cook! Serve! Delicious!", 0],
+    "answer2": ["Cooking Simulator", 0],
+    "answer3": ["Overcooked", 1],
+    "answer4": ["Cooking Mama", 0]
+  },
+  {
+    "Id": 103,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "The fifth entry in its series, what low-impact Nintendo Switch title, releasing in early 2020, was set on a desert island that could be visited by friends remotely?",
+    "answer1": ["Raft", 0],
+    "answer2": ["Animal Crossing: New Horizons", 1],
+    "answer3": ["Metroid: Dread", 0],
+    "answer4": ["Endless Ocean: Blue World", 0]
+  },
+  {
+    "Id": 104,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "You could team up with up to three people to investigate the paranormal in a handful of spooky settings in what 2020 horror title featuring banshees, poltergeists, and yokai?",
+    "answer1": ["Ghostwire: Tokyo", 0],
+    "answer2": ["Dead by Daylight", 0],
+    "answer3": ["Darkwatch", 0],
+    "answer4": ["Phasmophobia", 1]
+  },
+  {
+    "Id": 105,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "Winner of numerous awards upon its release in early 2021, what cooperative Hazelight Studios platformer transformed two fighting parents into toys to try to work out their differences for their daughter?",
+    "answer1": ["Moving Out", 0],
+    "answer2": ["LittleBigPlanet", 0],
+    "answer3": ["It Takes Two", 1],
+    "answer4": ["Unravel", 0]
+  },
+  {
+    "Id": 106,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "The first in the 'The Dark Pictures Anthology', which of these story-driven games, first released in 2019, allowed for cooperative play in 'Movie Night' mode?",
+    "answer1": ["The Quarry", 0],
+    "answer2": ["Back 4 Blood", 0],
+    "answer3": ["Man of Medan", 1],
+    "answer4": ["Obduction", 0]
+  },
+  {
+    "Id": 107,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "Playable for up to five people, which of these PC games, released in early 2021, allowed players to build, fight, and survive as a band of Vikings?",
+    "answer1": ["Sea of Thieves", 0],
+    "answer2": ["Valheim", 1],
+    "answer3": ["Castle Crashers", 0],
+    "answer4": ["God of War 4", 0]
+  },
+  {
+    "Id": 108,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "Playable for up to five people, which of these PC games, released in early 2021, allowed players to build, fight, and survive as a band of Vikings?",
+    "answer1": ["Sea of Thieves", 0],
+    "answer2": ["Valheim", 1],
+    "answer3": ["Castle Crashers", 0],
+    "answer4": ["God of War 4", 0]
+  },
+  {
+    "Id": 109,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "In 1997, a computer named Deep Purple beat chess wizard Garry Kasparov.",
+    "answer1": ["True", 0],
+    "answer2": ["False", 1],
+    "answer3": ["May be", 0],
+    "answer4": ["No way", 0]
+  },
+  {
+    "Id": 110,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "The type of UNIVAC computer delivered to the U.S. Census Bureau in 1951 was sold with a printer that cost:",
+    "answer1": ["$250", 0],
+    "answer2": ["$260,000", 0],
+    "answer3": ["$92,500", 0],
+    "answer4": ["$185,000", 1]
+  },
+  {
+    "Id": 111,
+    "level": "hard",
+    "categorie": "geek",
+    "question": "Computer demos have a long and glorious history that all started in 1960, with the PDP-1, a $125,000 precursor to the minicomputer. What game was played to test the setup of the PDP-1?",
+    "answer1": ["Splat man", 0],
+    "answer2": ["Pac Man", 0],
+    "answer3": ["Spacewar!", 1],
+    "answer4": ["Space Invaders", 0]
+  },
+  {
+    "Id": 112,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "Which of the following is not a computer language?",
+    "answer1": ["PEMDAS", 1],
+    "answer2": ["Algol", 0],
+    "answer3": ["BASIC", 0],
+    "answer4": ["Fortran", 0]
+  },
+  {
+    "Id": 113,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "What of the following is the oldest personal computer?",
+    "answer1": ["The TRS-80", 0],
+    "answer2": ["The Kenbak-1", 1],
+    "answer3": ["The Apple", 0],
+    "answer4": ["HAL", 0]
+  },
+  {
+    "Id": 114,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "In 1984, Apple Computer kicked off its campaign for the Macintosh, What was the name of the $10,000 flop the Mac replaced?",
+    "answer1": ["Homer", 0],
+    "answer2": ["Bart", 0],
+    "answer3": ["Lisa", 1],
+    "answer4": ["Maggie", 0]
+  },
+  {
+    "Id": 115,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "What type of memory is used to temporarily store information that the computer is currently working with?",
+    "answer1": ["SHEEP", 0],
+    "answer2": ["ROM", 0],
+    "answer3": ["RAM", 1],
+    "answer4": ["BIOS", 0]
+  },
+  {
+    "Id": 116,
+    "level": "medium",
+    "categorie": "geek",
+    "question": "How do you pronounce SCSI?",
+    "answer1": ["sicksy", 0],
+    "answer2": ["scuzzy", 1],
+    "answer3": ["sucksy", 0],
+    "answer4": ["ess cee ess eye", 0]
+  },
+  {
+    "Id": 117,
+    "level": "easy",
+    "categorie": "geek",
+    "question": "Who may have said, 'I think there is a world market for maybe five computers'?",
+    "answer1": ["Al Gore", 0],
+    "answer2": ["Bill Gates", 0],
+    "answer3": ["Thomas Watson (IBM)", 1],
+    "answer4": ["David Packard (hp)", 0]
+  },
+  {
+    "Id": 118,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can divide by ______",
+    "answer1": ["0,217", 0],
+    "answer2": ["pi", 0],
+    "answer3": ["0", 0],
+    "answer4": ["log(10)", 1]
+  },
+  {
+    "Id": 119,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete :When Chuck Norris wants an egg, he cracks open a ____",
+    "answer1": ["fridge", 0],
+    "answer2": ["box", 0],
+    "answer3": ["chicken", 1],
+    "answer4": ["cupboard", 0]
+  },
+  {
+    "Id": 120,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can win a game of ____ in three moves.",
+    "answer1": ["twister", 0],
+    "answer2": ["connect four", 1],
+    "answer3": ["chess", 0],
+    "answer4": ["rock paper cisor", 0]
+  },
+  {
+    "Id": 121,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris knows Victoria's ______",
+    "answer1": ["secret", 1],
+    "answer2": ["father", 0],
+    "answer3": ["dog", 0],
+    "answer4": ["age", 0]
+  },
+  {
+    "Id": 122,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris doesn't dial the wrong number, you pick up the wrong _____",
+    "answer1": ["sandwich", 0],
+    "answer2": ["phone", 1],
+    "answer3": ["pencil", 0],
+    "answer4": ["key", 0]
+  },
+  {
+    "Id": 123,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can _____ a Cyclops between the eye",
+    "answer1": ["kiss", 0],
+    "answer2": ["touch", 0],
+    "answer3": ["punch", 1],
+    "answer4": ["pull", 0]
+  },
+  {
+    "Id": 124,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can _______ in German",
+    "answer1": ["whistle", 1],
+    "answer2": ["speak", 0],
+    "answer3": ["sing", 0],
+    "answer4": ["wisper", 0]
+  },
+  {
+    "Id": 125,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris' computer has no _________ button, Chuck Norris doesn't make mistakes",
+    "answer1": ["backspace", 1],
+    "answer2": ["Q", 0],
+    "answer3": ["echap", 0],
+    "answer4": ["tab", 0]
+  },
+  {
+    "Id": 126,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can drown a ____",
+    "answer1": ["bird", 0],
+    "answer2": ["fish", 1],
+    "answer3": ["cow", 0],
+    "answer4": ["rabbit", 0]
+  },
+  {
+    "Id": 127,
+    "level": "easy",
+    "categorie": "chuck",
+    "question": "Complete : When Alexander Graham Bell invented the telephone he had three ______  from Chuck Norris",
+    "answer1": ["appel", 0],
+    "answer2": ["advices", 0],
+    "answer3": ["dollars", 0],
+    "answer4": ["missed call", 1]
+  },
+  {
+    "Id": 128,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris' calendar goes straight from March 31st to April 2nd. Nobody _____ Chuck Norris",
+    "answer1": ["talk to", 0],
+    "answer2": ["run with", 0],
+    "answer3": ["fools", 1],
+    "answer4": ["see", 0]
+  },
+  {
+    "Id": 129,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris doesn't wear a _____, HE decides what time it is",
+    "answer1": ["shirt", 0],
+    "answer2": ["watch", 1],
+    "answer3": ["pants", 0],
+    "answer4": ["hat", 0]
+  },
+  {
+    "Id": 130,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can do a wheelie on a ________",
+    "answer1": ["skateboard", 0],
+    "answer2": ["bycicle", 0],
+    "answer3": ["bike", 0],
+    "answer4": ["unicycle", 1]
+  },
+  {
+    "Id": 131,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can slam a _________ door",
+    "answer1": ["revolving", 1],
+    "answer2": ["big", 0],
+    "answer3": ["red", 0],
+    "answer4": ["small", 0]
+  },
+  {
+    "Id": 132,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can _____ Braille",
+    "answer1": ["write", 0],
+    "answer2": ["read", 0],
+    "answer3": ["speak", 1],
+    "answer4": ["teach", 0]
+  },
+  {
+    "Id": 133,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can sit in the corner of a ________ room",
+    "answer1": ["square", 0],
+    "answer2": ["circular", 1],
+    "answer3": ["octogonal", 0],
+    "answer4": ["triangle", 0]
+  },
+  {
+    "Id": 134,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris refers to himself in the ______ person",
+    "answer1": ["first", 0],
+    "answer2": ["third", 0],
+    "answer3": ["second", 0],
+    "answer4": ["fourth", 1]
+  },
+  {
+    "Id": 135,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can send a ____ _______ using a rotary phone",
+    "answer1": ["text message", 1],
+    "answer2": ["voice message", 0],
+    "answer3": ["hello", 0],
+    "answer4": ["what's up", 0]
+  },
+  {
+    "Id": 136,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can find the end of a ______",
+    "answer1": ["circle", 1],
+    "answer2": ["book", 0],
+    "answer3": ["road", 0],
+    "answer4": ["rope", 0]
+  },
+  {
+    "Id": 137,
+    "level": "medium",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris counted to ________ - twice",
+    "answer1": ["1 000 000", 0],
+    "answer2": ["10 000", 0],
+    "answer3": ["100 000", 0],
+    "answer4": ["infinity", 1]
+  },
+  {
+    "Id": 138,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : When Chuck Norris falls in water, Chuck Norris doesn't get ___, water gets Chuck Norris",
+    "answer1": ["wet", 1],
+    "answer2": ["hot", 0],
+    "answer3": ["cold", 0],
+    "answer4": ["blue", 0]
+  },
+  {
+    "Id": 139,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can ____ sign language",
+    "answer1": ["read", 0],
+    "answer2": ["teach", 0],
+    "answer3": ["hear", 1],
+    "answer4": ["use", 0]
+  },
+  {
+    "Id": 140,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : Fear of spiders is called arachnophobia, fear of tight spaces is called claustrophobia, fear of Chuck Norris is called _____",
+    "answer1": ["chuckphobia", 0],
+    "answer2": ["norrisphobia", 0],
+    "answer3": ["chunorrphobia", 0],
+    "answer4": ["logic", 1]
+  },
+  {
+    "Id": 141,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris will never have a heart attack. His heart isn't nearly _______ enough to attack him",
+    "answer1": ["brave", 0],
+    "answer2": ["foolish", 1],
+    "answer3": ["strong", 0],
+    "answer4": ["old", 0]
+  },
+  {
+    "Id": 142,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris makes ____ cry",
+    "answer1": ["kids", 0],
+    "answer2": ["onions", 1],
+    "answer3": ["men", 0],
+    "answer4": ["women", 0]
+  },
+  {
+    "Id": 143,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : There is no theory of ____. Just a list of animals Chuck Norris allows to live.",
+    "answer1": ["evolution", 1],
+    "answer2": ["heliocentrism", 0],
+    "answer3": ["relativity", 0],
+    "answer4": ["big-bang", 0]
+  },
+  {
+    "Id": 144,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris can tie his shoes with his ____.",
+    "answer1": ["thumbs", 0],
+    "answer2": ["hands", 0],
+    "answer3": ["fingers", 0],
+    "answer4": ["feet", 1]
+  },
+  {
+    "Id": 145,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris has already been to ____; that's why there are no signs of life. ",
+    "answer1": ["mars", 1],
+    "answer2": ["russia", 0],
+    "answer3": ["scotland", 0],
+    "answer4": ["spain", 0]
+  },
+  {
+    "Id": 146,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris knows the last digit of ____.",
+    "answer1": ["286/36", 0],
+    "answer2": ["795e-1", 0],
+    "answer3": ["pi", 1],
+    "answer4": ["25,28^52", 0]
+  },
+  {
+    "Id": 147,
+    "level": "hard",
+    "categorie": "chuck",
+    "question": "Complete : Chuck Norris does not ____. He waits.",
+    "answer1": ["ride", 0],
+    "answer2": ["run", 0],
+    "answer3": ["rest", 0],
+    "answer4": ["sleep", 1]
+  }
+ ]
