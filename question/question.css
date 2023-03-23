@@ -281,13 +281,13 @@ body div.flexContainerMain div.questionCard a.skipNextButton:hover {
   }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     background-size: 90%;
   }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
   body {
     background-size: 90%;
   }

@@ -244,7 +244,7 @@ a:hover {
 }
 
 /* Iphone XR */
-@media screen and (min-device-width : 414px) and (max-device-width : 767px) {
+@media screen and (min-width : 414px) and (max-width : 767px) {
     .scoreRokket {
         top: 5%;
         width: 50%;
@@ -338,7 +338,7 @@ a:hover {
     }
 
 /* iPads ----------- */
-@media screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+@media screen and (min-width : 768px) and (max-width : 1023px) {
 
     .scoreRokket {
         top: 9%;
