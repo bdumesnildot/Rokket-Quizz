@@ -75,7 +75,7 @@ const scoreText = document.querySelector("h2");
 
 if (categorie === "chuck") {
     chuckImg.style.display = "block";
-    congratsText.innerHTML = "Nobody beats me";
+    congratsText.innerHTML = "no Score Vs Chuck";
     scoreText.style.color = "transparent";
 }
 
