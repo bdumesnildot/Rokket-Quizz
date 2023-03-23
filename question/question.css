@@ -30,6 +30,10 @@
   /* border: solid 1px red; */
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 /* main container */
 
 body {
