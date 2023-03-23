@@ -6,7 +6,7 @@ basic HTML CSS JavaScript
 ![screenshot_home](assets/img/screenshot_home.jpg)
 ![screenshot_question](assets/img/screenshot_question.jpg)
 
-## Contributors
+## contributors
 - Marine Boulanger - https://github.com/Mogwaie
 - Elea Voliotis - https://github.com/Elea641
 - Souhael Hambi - https://github.com/Ghostcoder13
