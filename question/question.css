@@ -224,12 +224,8 @@ body div.flexContainerMain div.questionCard #answer4 {
   background-color: var(--color1);
 }
 
-body div.flexContainerMain div.questionCard .answer:hover {
-  scale: 0.98;
-}
-
 body div.flexContainerMain div.questionCard a.skipNextButton {
-  width: 8%;
+  width: 20%;
   justify-self: center;
   text-align: center;
   color: var(--color-dark-btn);
@@ -238,10 +234,6 @@ body div.flexContainerMain div.questionCard a.skipNextButton {
   padding: 0 0 1vh 0;
   text-decoration: none;
   cursor: pointer;
-}
-
-body div.flexContainerMain div.questionCard a.skipNextButton:hover {
-  color: var(--color3);
 }
 
 /* responsive ----------- */
@@ -343,8 +335,16 @@ body div.flexContainerMain div.questionCard a.skipNextButton:hover {
     font-size: 1.3em;
     cursor: pointer;
   }
+  
+  body div.flexContainerMain div.questionCard .answer:hover {
+    scale: 0.98;
+  }
 
   body div.flexContainerMain div.questionCard a.skipNextButton {
     grid-column: 1 / 3;
+  }
+
+  body div.flexContainerMain div.questionCard a.skipNextButton:hover {
+    color: var(--color3);
   }
 }
