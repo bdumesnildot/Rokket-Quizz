@@ -57,10 +57,12 @@ body {
 
 h1 {
     font-size: 35px;
+    z-index: 50;
 }
 
 h2 {
     font-size: 45px;
+    z-index: 50;
 }
 
 .backContainer {
