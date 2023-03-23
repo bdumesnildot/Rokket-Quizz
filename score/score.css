@@ -92,6 +92,21 @@ a:hover {
     margin: auto;
     overflow: hidden;
     height: 38vh;
+    animation : spinning 1.2s ease;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(-900deg);
+        scale: 0.01;
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0deg);
+        scale: 1;
+        opacity: 100;
+    }
+
 }
 
 /*background stars*/
