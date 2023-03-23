@@ -7,7 +7,6 @@ body {
     margin: 0;
     padding: 0;
     max-height: 100vh;
-    min-height: 100vh;
     background-color: var(--background-color);
     overflow: hidden;
 }
@@ -21,7 +20,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 90vh;
 }
 
 .text-and-moon{
@@ -222,16 +221,16 @@ h1 {
     h1 {
         font-size: 70px;
         padding-top: .5em;
+        margin-bottom: 20px;
     }
 
     .rocket-home-page{
         width: 90%;
         padding-left: 0;
-        margin-bottom: 1em;
     }
 
     .text-and-moon {
-        margin-bottom: 6em;
+        margin-bottom: 2em;
     }
 
     .text-soundbite {
