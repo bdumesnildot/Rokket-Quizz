@@ -504,9 +504,9 @@
     "level": "hard",
     "categorie": "food",
     "question": "What percentage of the world's hazelnuts are used to make Nutella?",
-    "answer1": ["2", 0],
-    "answer2": ["12", 0],
-    "answer3": ["25", 1],
+    "answer1": ["2%", 0],
+    "answer2": ["12%", 0],
+    "answer3": ["25%", 1],
     "answer4": ["100%", 0]
   },
   {
