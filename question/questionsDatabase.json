@@ -1176,8 +1176,8 @@
     "question": "Complete : Chuck Norris can divide by ______",
     "answer1": ["0,217", 0],
     "answer2": ["pi", 0],
-    "answer3": ["0", 0],
-    "answer4": ["log(10)", 1]
+    "answer3": ["0", 1],
+    "answer4": ["log(10)", 0]
   },
   {
     "Id": 119,
